@@ -1,62 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PropUp Services | Maintenance Experts</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <title>PropUp Services | Home Repairs & Maintenance</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-      <h1>PropUp Services</h1>
-      <p>Your trusted maintenance specialists</p>
-      <a href="#quotation" class="btn">Free Quotation</a>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/image0 (3).jpeg" alt="PropUp Logo" height="40" class="me-2">
+        <strong>PropUp Services</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">General Repairs</a></li>
+              <li><a class="dropdown-item" href="#">Annual Maintenance</a></li>
+              <li><a class="dropdown-item" href="#">Painting & Decorating</a></li>
+              <li><a class="dropdown-item" href="#">Plumbing</a></li>
+              <li><a class="dropdown-item" href="#">Electrical</a></li>
+              <li><a class="dropdown-item" href="#">Cleaning</a></li>
+              <li><a class="dropdown-item" href="#">Garden Services</a></li>
+              <li><a class="dropdown-item" href="#">Fencing</a></li>
+              <li><a class="dropdown-item" href="#">Roofing</a></li>
+              <li><a class="dropdown-item" href="#">Appliance Repairs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:joehood2014@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tel:07841519614"><i class="fas fa-phone"></i> Call Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quotation">Free Quotation</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>General Repairs</li>
-      <li>Annual Maintenance</li>
-      <li>Painting & Decorating</li>
-      <li>Plumbing</li>
-      <li>Electrical</li>
-      <li>Cleaning</li>
-      <li>Garden Services</li>
-      <li>Fencing</li>
-      <li>Roofing</li>
-      <li>Appliance Repairs & Installations</li>
-    </ul>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-overlay">
+      <h1 class="display-5 fw-bold">Home Repairs & Maintenance Made Easy</h1>
+      <p class="lead">From leaks to lighting, PropUp Services is here to help. Professional, reliable, and ready to go!</p>
+      <a href="#quotation" class="btn btn-primary btn-lg mt-3">Get Your Free Quote</a>
+    </div>
   </section>
 
-  <section class="quotation" id="quotation">
-    <h2>Request a Free Quotation</h2>
-    <form>
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <label for="file">Upload Photos/Videos</label>
-      <input type="file" id="file" name="file" multiple />
-
-      <button type="submit" class="btn">Submit</button>
-    </form>
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Can you help with same-day home repairs?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Yes, we often have availability for same-day bookings depending on your location and task.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              What areas do you cover?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">We cover Greater London and surrounding areas. Contact us if you're unsure.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Can I upload pictures or videos?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Yes! Our quotation form allows uploads so we can understand your task better.</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 PropUp Services. All rights reserved.</p>
+  <!-- Quotation Form -->
+  <section id="quotation" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Get Your Free Quotation</h2>
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required>
+          </div>
+          <div class="col-md-6">
+            <label for="file" class="form-label">Upload Photos/Videos</label>
+            <input class="form-control" type="file" id="file" multiple>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">&copy; 2025 PropUp Services. All rights reserved.</p>
+      <a href="https://www.facebook.com/share/19eVURJwJv/?mibextid=wwXIfr" class="text-white" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+    </div>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
+
+
