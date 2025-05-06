@@ -61,23 +61,29 @@ footer {
   color: #ffc107;
 }
 
+/* Common Hero Section Styles */
 .hero {
-  background-image: url('assets/pexels-rdne-8293646.jpg');
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 100px 0;
+  padding: 100px 0; 
   position: relative;
   text-align: center;
 }
 
+/* Specific Hero Section for Index Page */
+.hero-index {
+  background-image: url('/assets/homepage.jpg'); 
+}
+
+/* Specific Hero Section for Painting Page */
+.hero-painting {
+  background-image: url('assets/paintinghero.jpg'); 
+}
+
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.5); /* Optional dark overlay for readability */
+  background: rgba(0, 0, 0, 0.5); 
   padding: 60px 20px;
   border-radius: 8px;
 }
 
-.dropdown-menu {
-  max-height: 300px;
-  overflow-y: auto;
-}
