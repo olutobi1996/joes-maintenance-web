@@ -69,24 +69,70 @@
   </section>
 
 
-  <!-- About Section -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">About Prop-Up Services</h2>
-      <p class="lead text-center">
-        PropUp Services is your trusted partner for all things property maintenance and home repairs.
-        We proudly serve the Cambridge area, offering reliable, high-quality workmanship for residential and commercial
-        clients alike.
-      </p>
-      <p class="text-center">
-        From fixing leaky taps to full property maintenance contracts, our experienced team handles general repairs,
-        annual servicing, electrical work, plumbing,
-        painting & decorating, fencing, roofing, garden care, appliance repairs, and more.
-        No job is too small — we’re committed to keeping your property running smoothly all year round.
-      </p>
-    </div>
-  </section>
+ <!-- Updated About Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">About Prop-Up Services</h2>
+    <p class="lead text-center">
+      At <strong>Prop-Up Services</strong>, we specialise in reliable home repairs and property maintenance across Cambridge and the surrounding areas.
+    </p>
+    <p class="text-center">
+      Whether you're dealing with a leaky tap, planning seasonal maintenance, or managing a full renovation, our experienced and fully insured team delivers professional results with care and efficiency. 
+      We handle general repairs, electrical work, plumbing, painting, fencing, roofing, appliance servicing, and more — for both homes and businesses.
+    </p>
+    <p class="text-center">
+      No job is too small. Your peace of mind is our priority.
+    </p>
+  </div>
+</section>
 
+<!-- Gallery Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Gallery of Our Work</h2>
+    <div class="row g-3">
+      <div class="col-sm-6 col-lg-3">
+        <img src="assets/gallery1.jpg" class="img-fluid rounded shadow-sm" alt="Repair Work 1">
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <img src="assets/gallery2.jpg" class="img-fluid rounded shadow-sm" alt="Repair Work 2">
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <img src="assets/gallery3.jpg" class="img-fluid rounded shadow-sm" alt="Repair Work 3">
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <img src="assets/gallery4.jpg" class="img-fluid rounded shadow-sm" alt="Repair Work 4">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">What Our Clients Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <p>“Fast, friendly, and reliable. Fixed our plumbing issue on the same day. Highly recommend!”</p>
+          <h6 class="mb-0">— Sarah J., Cambridge</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <p>“We use Prop-Up for our rental properties. They’re responsive, professional, and easy to work with.”</p>
+          <h6 class="mb-0">— Tom P., Letting Agent</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <p>“Excellent service from start to finish. The new fence looks brilliant!”</p>
+          <h6 class="mb-0">— Helen W., Landowner</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- FAQ Section -->
   <section class="py-5">
@@ -165,41 +211,41 @@
   </section>
 
 
-  <!-- Quotation Form -->
-  <section class="py-5">
-    <div class="container">
-      <h3 class="mb-4 text-center">Get Your Free Quote</h3>
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-          <div class="card shadow-sm p-4">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your full name">
-              </div>
-              <div class="col-md-6">
-                <label for="file" class="form-label">Upload Photos/Videos</label>
-                <input class="form-control" type="file" id="file" multiple>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="service" class="form-label">Service Required</label>
-              </div>
-              <div class="mb-3">
-                <label for="details" class="form-label">Additional Details</label>
-                <textarea class="form-control" id="details" rows="3"
-                  placeholder="Provide any specific requirements or questions"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Submit Quote Request</button>
-            </form>
-          </div>
+ <!-- Compact Quotation Form -->
+<section class="py-5" id="quotation">
+  <div class="container">
+    <h3 class="mb-4 text-center">Get Your Free Quote</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="card shadow-sm p-4">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control form-control-sm" id="name" placeholder="Your full name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control form-control-sm" id="email" placeholder="you@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="service" class="form-label">Service Required</label>
+              <input type="text" class="form-control form-control-sm" id="service" placeholder="e.g., Plumbing">
+            </div>
+            <div class="mb-3">
+              <label for="details" class="form-label">Details</label>
+              <textarea class="form-control form-control-sm" id="details" rows="3" placeholder="Briefly describe the issue or request"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="file" class="form-label">Upload Images/Videos</label>
+              <input type="file" class="form-control form-control-sm" id="file" multiple>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Request</button>
+          </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
