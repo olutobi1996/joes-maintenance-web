@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prop-Up Services | Appliance Repairs</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
@@ -59,7 +61,8 @@
   <section class="py-5">
     <div class="container">
       <h2>Expert Appliance Repairs</h2>
-      <p>PropUp Services offers fast, reliable repairs for all types of household appliances. From washing machines to fridges, we provide the expertise needed to restore your appliance quickly and efficiently.</p>
+      <p>PropUp Services offers fast, reliable repairs for all types of household appliances. From washing machines to
+        fridges, we provide the expertise needed to restore your appliance quickly and efficiently.</p>
       <ul>
         <li>Washing machine repairs</li>
         <li>Fridge and freezer repairs</li>
@@ -71,21 +74,88 @@
     </div>
   </section>
 
+  <!-- Gallery Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h3 class="mb-4 text-center">Recent Appliance Repairs</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/appliance1.jpg" class="card-img-top" alt="Washing machine repair">
+            <div class="card-body">
+              <p class="card-text">Repaired a leaking washing machine in Cambridge city centre.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/appliance2.jpg" class="card-img-top" alt="Oven repair">
+            <div class="card-body">
+              <p class="card-text">Replaced heating element in a built-in oven in Trumpington.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/appliance3.jpg" class="card-img-top" alt="Fridge repair">
+            <div class="card-body">
+              <p class="card-text">Fixed temperature control issue on a fridge/freezer unit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="mb-4 text-center">What Our Customers Say</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p class="mb-2">“Our oven stopped working right before the weekend – they came out the same day and sorted
+              it quickly. Highly recommend!”</p>
+            <p class="fw-bold mb-0">– Rachel B., Cherry Hinton</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p class="mb-2">“Prompt and professional – fixed our leaking dishwasher in one visit.”</p>
+            <p class="fw-bold mb-0">– Tom W., Newmarket Road</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-4 rounded shadow-sm h-100">
+            <p class="mb-2">“Their appliance repair service is honest and reliable. I was kept informed every step of
+              the way.”</p>
+            <p class="fw-bold mb-0">– Anna G., Mill Road</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- FAQs -->
   <section class="bg-light py-5">
     <div class="container">
       <h3>Frequently Asked Questions</h3>
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Do you offer emergency appliance repairs?</button></h2>
+          <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse"
+              data-bs-target="#faq1">Do you offer emergency appliance repairs?</button></h2>
           <div id="faq1" class="accordion-collapse collapse show">
-            <div class="accordion-body">Yes, we offer emergency repair services for urgent appliance breakdowns. Just give us a call, and we'll prioritize your request.</div>
+            <div class="accordion-body">Yes, we offer emergency repair services for urgent appliance breakdowns. Just
+              give us a call, and we'll prioritize your request.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Do you provide warranty for repairs?</button></h2>
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
+              data-bs-target="#faq2">Do you provide warranty for repairs?</button></h2>
           <div id="faq2" class="accordion-collapse collapse">
-            <div class="accordion-body">Yes, we provide a warranty on all our repairs, ensuring your appliances are in good working order for an extended period.</div>
+            <div class="accordion-body">Yes, we provide a warranty on all our repairs, ensuring your appliances are in
+              good working order for an extended period.</div>
           </div>
         </div>
       </div>
@@ -95,12 +165,41 @@
   <!-- Quotation Form -->
   <section class="py-5">
     <div class="container">
-      <h3>Get Your Free Quote</h3>
+      <h3 class="mb-4">Request an Appliance Repair Quote</h3>
       <form>
-        <!-- Quotation form fields go here -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <div class="mb-3">
+          <label for="applianceType" class="form-label">Appliance Type</label>
+          <select class="form-select" id="applianceType" required>
+            <option value="" disabled selected>Select an appliance</option>
+            <option>Washing Machine</option>
+            <option>Fridge / Freezer</option>
+            <option>Dishwasher</option>
+            <option>Oven / Stove</option>
+            <option>Microwave</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="issue" class="form-label">Brief Description of Issue</label>
+          <textarea class="form-control" id="issue" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Request</button>
       </form>
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
@@ -112,4 +211,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
