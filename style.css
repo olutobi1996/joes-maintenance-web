@@ -98,4 +98,39 @@ footer {
   object-fit: cover;
 }
 
+.hero-roofing {
+  background-image: url('assets/roofinghero.jpg');
+}
+
+.hero-plumbing {
+  background-image: url('assets/plumbinghero.jpg');
+}
+
+.hero-general {
+  background-image: url('assets/generalrepairshero.jpg');
+}
+
+.hero-garden {
+  background-image: url('assets/gardenserviceshero.jpg');
+}
+
+.hero-fencing {
+  background-image: url('assets/fencinghero.jpg');
+}
+
+.hero-electrical {
+  background-image: url('assets/electricalhero.jpg');
+}
+
+.hero-cleaning {
+  background-image: url('assets/cleaninghero.jpg');
+}
+
+.hero-appliances {
+  background-image: url('assets/appliancerepairshero.jpg');
+}
+
+.hero-maintenance {
+  background-image: url('assets/annualmaintenancehero.jpg');
+}
 
