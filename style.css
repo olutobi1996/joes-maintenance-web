@@ -1,6 +1,6 @@
-/* body */
+/* Body */
 body {
-  font-family: 'Poppins', sans-serif;
+  padding-top: 100px; /* More room for logo */
 }
 
 /* Logo and header */
@@ -134,3 +134,109 @@ footer {
   background-image: url('assets/annualmaintenancehero.jpg');
 }
 
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle Background Gradient */
+body {
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+}
+
+/* Fade effect */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Soft shadow and scale on scroll */
+.card, .shadow-sm, .gallery-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.card:hover, .gallery-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #ffc107;
+  color: #000;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: none;
+  z-index: 999;
+  transition: background 0.3s;
+}
+.scroll-to-top:hover {
+  background: #e0a800;
+}
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* About section */
+.about-bubble {
+  background: radial-gradient(circle at top left, #e0f7fa, #ffffff);
+  border-radius: 60px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: float 6s ease-in-out infinite;
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+ 
+
+.about-bubble h2 {
+  font-size: 2.5rem;
+  color: #00796b;
+  font-weight: 700;
+}
+
+.about-bubble p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .about-bubble {
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .about-bubble h2 {
+    font-size: 2rem;
+  }
+
+  .about-bubble p {
+    font-size: 1rem;
+  }
+}

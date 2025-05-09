@@ -9,6 +9,61 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .about-bubble {
+      background: radial-gradient(circle at top left, #e0f7fa, #ffffff);
+      border-radius: 60px;
+      padding: 3rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+    .about-bubble h2 {
+      font-size: 2.5rem;
+      color: #00796b;
+      font-weight: 700;
+    }
+
+    .about-bubble p {
+      font-size: 1.2rem;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .about-bubble {
+        padding: 2rem;
+        border-radius: 30px;
+      }
+
+      .about-bubble h2 {
+        font-size: 2rem;
+      }
+
+      .about-bubble p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -55,27 +110,55 @@
     </div>
   </section>
 
-  <!-- Service Description -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="mb-4">Plumbing Services</h2>
-      <p>Prop-Up Services provides reliable, affordable plumbing solutions across Cambridge and the surrounding area.
-        Whether it's a burst pipe, a new kitchen sink, or blocked drains, our experienced team is just a call away.</p>
-      <p>We offer both emergency repairs and planned installations, always with a focus on quality workmanship and tidy
-        finishes. Our plumbers are friendly, insured, and always on time.</p>
-      <ul>
-        <li>Emergency leak repairs</li>
-        <li>Bathroom & kitchen plumbing installations</li>
-        <li>Unblocking drains & sinks</li>
-        <li>Pipe replacement and rerouting</li>
-        <li>Non-gas boiler troubleshooting</li>
-      </ul>
+ <!-- Service Description -->
+<section class="py-5 bg-gradient text-white" style="background: linear-gradient(135deg, #0d6efd 20%, #6610f2 100%);">
+  <div class="container" data-aos="fade-up">
+    <div class="bg-white text-dark rounded-4 p-5 shadow-lg">
+      <h2 class="text-center fw-bold mb-4">🚿 Dependable Plumbing, Done Right</h2>
+      <p class="lead text-center">
+        At <strong>Prop-Up Services</strong>, we provide fast, friendly, and affordable plumbing work across Cambridge.
+        Whether it's an emergency leak or a new bathroom fitting, our experienced team is here to help.
+      </p>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+          <ul class="list-unstyled fs-5">
+            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Emergency leak repairs</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Bathroom & kitchen installations</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Unblocking drains & sinks</li>
+            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Pipe replacement and rerouting</li>
+            <li><i class="fas fa-check-circle text-primary me-2"></i> Non-gas boiler troubleshooting</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- About Plumbing Services -->
+<section class="py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="about-bubble text-center">
+      <h2>About Our Plumbing Services</h2>
+      <p class="lead">
+        From emergency pipe bursts to kitchen tap upgrades, <strong>Prop-Up Services</strong> handles it all with skill and speed.
+      </p>
+      <p>
+        We treat every job with care — ensuring top-quality workmanship, neat finishes, and zero mess left behind. Our team is fully insured, punctual, and polite.
+      </p>
+      <p>
+        Need help fast? We offer emergency plumbing across Cambridge and flexible bookings for non-urgent jobs.
+      </p>
+      <p>
+        <em>Reliable plumbing, whenever you need it.</em>
+      </p>
+    </div>
+  </div>
+</section>
+
 
 <!-- Project Gallery -->
 <section class="py-5 bg-light">
-  <div class="container">
+  <div class="container" data-aos="fade-up">
     <h3 class="mb-4 text-center">Recent Plumbing Projects</h3>
     <div class="row g-3">
       <div class="col-sm-6 col-lg-4">
@@ -97,7 +180,7 @@
 
   <!-- Testimonials -->
   <section class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h3 class="mb-4 text-center">What Our Clients Say</h3>
       <div class="row g-4">
         <div class="col-md-4">
@@ -126,7 +209,7 @@
 
   <!-- FAQs -->
   <section class="bg-light py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h3>Frequently Asked Questions</h3>
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
@@ -159,7 +242,7 @@
 
   <!-- Quotation Form -->
   <section class="py-5">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h3 class="mb-4 text-center">Get a Plumbing Quote</h3>
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6">
