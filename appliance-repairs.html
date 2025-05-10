@@ -16,41 +16,42 @@
 </head>
 
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm custom-navbar" data-aos="fade-down">
-  <div class="container d-flex flex-column align-items-center">
-    <a class="navbar-brand mx-auto" href="index.html">
-      <img src="assets/propuplogo.jpg" alt="PropUp Logo" class="logo">
-    </a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm custom-navbar" data-aos="fade-down">
+    <div class="container d-flex flex-column align-items-center">
+      <a class="navbar-brand mx-auto" href="index.html">
+        <img src="assets/propuplogo.jpg" alt="PropUp Logo" class="logo">
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="general-repairs.html">General Repairs</a></li>
-            <li><a class="dropdown-item" href="annual-maintenance.html">Annual Maintenance</a></li>
-            <li><a class="dropdown-item" href="painting.html">Painting & Decorating</a></li>
-            <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
-            <li><a class="dropdown-item" href="electrical.html">Electrical</a></li>
-            <li><a class="dropdown-item" href="cleaning.html">Cleaning</a></li>
-            <li><a class="dropdown-item" href="garden-services.html">Garden Services</a></li>
-            <li><a class="dropdown-item" href="fencing.html">Fencing</a></li>
-            <li><a class="dropdown-item" href="roofing.html">Roofing</a></li>
-            <li><a class="dropdown-item" href="appliance-repairs.html">Appliance Repairs</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="mailto:joehood2014@gmail.com"><i class="fas fa-envelope"></i> Email Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="tel:07841519614"><i class="fas fa-phone"></i> Call Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="#quotation">Free Quotation</a></li>
-      </ul>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="general-repairs.html">General Repairs</a></li>
+              <li><a class="dropdown-item" href="annual-maintenance.html">Annual Maintenance</a></li>
+              <li><a class="dropdown-item" href="painting.html">Painting & Decorating</a></li>
+              <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+              <li><a class="dropdown-item" href="electrical.html">Electrical</a></li>
+              <li><a class="dropdown-item" href="cleaning.html">Cleaning</a></li>
+              <li><a class="dropdown-item" href="garden-services.html">Garden Services</a></li>
+              <li><a class="dropdown-item" href="fencing.html">Fencing</a></li>
+              <li><a class="dropdown-item" href="roofing.html">Roofing</a></li>
+              <li><a class="dropdown-item" href="appliance-repairs.html">Appliance Repairs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="mailto:joehood2014@gmail.com"><i class="fas fa-envelope"></i>
+              Email Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="tel:07841519614"><i class="fas fa-phone"></i> Call Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#quotation">Free Quotation</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
   <!-- Hero Section -->
@@ -243,7 +244,7 @@
 
   <!-- Reviews Section -->
   <section class="py-5">
-    <div class="container" data-aos="fade-up">
+    <div class="container" id="quotation">
       <h3 class="mb-4 text-center">What Our Customers Say</h3>
       <div class="row g-4">
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
@@ -296,41 +297,48 @@
     </div>
   </section>
 
-  <!-- Quotation Form -->
-  <section class="py-5" data-aos="fade-down">
-    <div class="container">
-      <h3 class="mb-4">Request an Appliance Repair Quote</h3>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Full Name</label>
-          <input type="text" class="form-control" id="name" required>
+  <!-- Compact Quotation Form -->
+  <section class="py-5" id="quotation">
+    <div class="container" data-aos="fade-down">
+      <h3 class="mb-4 text-center">Get a Appliance Repair Quote</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="card shadow-sm p-4">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control form-control-sm" id="name" placeholder="Your full name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-sm" id="email" placeholder="you@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="service" class="form-label">Service Required</label>
+                <select class="form-select form-select-sm" id="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Washing Machine</option>
+                  <option>Fridge / Freezer</option>
+                  <option>Dishwasher</option>
+                  <option>Oven / Stove</option>
+                  <option>Microwave</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="details" class="form-label">Details</label>
+                <textarea class="form-control form-control-sm" id="details" rows="3"
+                  placeholder="Briefly describe the issue or request"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="file" class="form-label">Upload Images/Videos</label>
+                <input type="file" class="form-control form-control-sm" id="file" multiple>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Request</button>
+            </form>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email Address</label>
-          <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="phone" class="form-label">Phone Number</label>
-          <input type="tel" class="form-control" id="phone" required>
-        </div>
-        <div class="mb-3">
-          <label for="applianceType" class="form-label">Appliance Type</label>
-          <select class="form-select" id="applianceType" required>
-            <option value="" disabled selected>Select an appliance</option>
-            <option>Washing Machine</option>
-            <option>Fridge / Freezer</option>
-            <option>Dishwasher</option>
-            <option>Oven / Stove</option>
-            <option>Microwave</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="issue" class="form-label">Brief Description of Issue</label>
-          <textarea class="form-control" id="issue" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit Request</button>
-      </form>
+      </div>
     </div>
   </section>
 

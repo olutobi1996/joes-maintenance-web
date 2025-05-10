@@ -1,18 +1,27 @@
+:root {
+  --primary: #007BFF;       /* Bright Blue (tools & roof) */
+  --secondary: #003366;     /* Dark Blue (text: Upgrades) */
+  --accent: #00CFFF;        /* Light Blue (stars) */
+  --wave: #0096D6;          /* Wave Blue */
+}
+
 /* Body */
 body {
-  padding-top: 100px; /* More room for logo */
+  padding-top: 0;
+  margin: 0;
+  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
 }
 
 /* Logo and header */
 .logo {
-  width: 120px;
+ width: 300px;
   margin-bottom: 1rem;
 }
 
 /* Buttons */
 .btn {
-  background: #ffc107;
-  color: #000;
+  background: var(--primary);
+  color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 5px;
@@ -20,7 +29,7 @@ body {
   transition: background 0.3s ease;
 }
 .btn:hover {
-  background: #e0a800;
+  background: var(--wave);
 }
 
 /* Services List */
@@ -31,7 +40,7 @@ body {
   gap: 1rem;
 }
 .services li {
-  background: #e0e0e0;
+  background: #e0f3ff;
   margin: 0.5rem 0;
   padding: 0.75rem;
   border-radius: 4px;
@@ -45,7 +54,7 @@ body {
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: #003366;
+  background: var(--secondary);
   color: white;
 }
 .social-link {
@@ -58,103 +67,81 @@ footer {
   margin-right: 0.5rem;
 }
 .social-link:hover {
-  color: #ffc107;
+  color: var(--accent);
 }
 
-/* Common Hero Section Styles */
+/* Hero Sections */
 .hero {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 100px 0; 
+  padding: 100px 0;
   position: relative;
   text-align: center;
 }
 
-/* Specific Hero Section for Index Page */
 .hero-index {
-  background-image: url('/assets/homepage.jpg'); 
+  background-image: url('/assets/homepage.jpg');
 }
-
-/* Specific Hero Section for Painting Page */
 .hero-painting {
-  background-image: url('assets/paintinghero.jpg'); 
+  background-image: url('assets/paintinghero.jpg');
+}
+.hero-roofing {
+  background-image: url('assets/roofinghero.jpg');
+}
+.hero-plumbing {
+  background-image: url('assets/plumbinghero.jpg');
+}
+.hero-general {
+  background-image: url('assets/generalrepairshero.jpg');
+}
+.hero-garden {
+  background-image: url('assets/gardenserviceshero.jpg');
+}
+.hero-fencing {
+  background-image: url('assets/fencinghero.jpg');
+}
+.hero-electrical {
+  background-image: url('assets/electricalhero.jpg');
+}
+.hero-cleaning {
+  background-image: url('assets/cleaninghero.jpg');
+}
+.hero-appliances {
+  background-image: url('assets/appliancerepairshero.jpg');
+}
+.hero-maintenance {
+  background-image: url('assets/annualmaintenancehero.jpg');
 }
 
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   padding: 60px 20px;
   border-radius: 8px;
 }
 
-.gallery-img {
+/* Images */
+.gallery-img, .roofing-img {
   height: 200px;
   object-fit: cover;
   width: 100%;
 }
 
-.roofing-img {
-  height: 200px;
-  object-fit: cover;
-}
-
-.hero-roofing {
-  background-image: url('assets/roofinghero.jpg');
-}
-
-.hero-plumbing {
-  background-image: url('assets/plumbinghero.jpg');
-}
-
-.hero-general {
-  background-image: url('assets/generalrepairshero.jpg');
-}
-
-.hero-garden {
-  background-image: url('assets/gardenserviceshero.jpg');
-}
-
-.hero-fencing {
-  background-image: url('assets/fencinghero.jpg');
-}
-
-.hero-electrical {
-  background-image: url('assets/electricalhero.jpg');
-}
-
-.hero-cleaning {
-  background-image: url('assets/cleaninghero.jpg');
-}
-
-.hero-appliances {
-  background-image: url('assets/appliancerepairshero.jpg');
-}
-
-.hero-maintenance {
-  background-image: url('assets/annualmaintenancehero.jpg');
-}
-
-/* Smooth Scroll */
+/* Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Subtle Background Gradient */
-body {
-  background: linear-gradient(to bottom, #f9f9f9, #ffffff);
-}
-
-/* Fade effect */
+/* Animations */
 [data-aos] {
   opacity: 0;
   transition-property: opacity, transform;
 }
-
 [data-aos].aos-animate {
   opacity: 1;
 }
 
-/* Soft shadow and scale on scroll */
+/* Hover Effects */
 .card, .shadow-sm, .gallery-img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -167,8 +154,8 @@ body {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: #ffc107;
-  color: #000;
+  background: var(--primary);
+  color: white;
   padding: 10px 12px;
   border-radius: 50%;
   font-size: 18px;
@@ -177,16 +164,7 @@ body {
   transition: background 0.3s;
 }
 .scroll-to-top:hover {
-  background: #e0a800;
-}
-
-[data-aos] {
-  opacity: 0;
-  transition-property: opacity, transform;
-}
-
-[data-aos].aos-animate {
-  opacity: 1;
+  background: var(--wave);
 }
 
 .hover-zoom {
@@ -194,75 +172,62 @@ body {
 }
 .hover-zoom:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-/* About section */
+/* About Section */
 .about-bubble {
   background: radial-gradient(circle at top left, #e0f7fa, #ffffff);
   border-radius: 60px;
   padding: 3rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   animation: float 6s ease-in-out infinite;
   font-family: 'Poppins', sans-serif;
 }
-
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
- 
-
 .about-bubble h2 {
   font-size: 2.5rem;
-  color: #00796b;
+  color: var(--secondary);
   font-weight: 700;
 }
-
 .about-bubble p {
   font-size: 1.2rem;
   color: #444;
   line-height: 1.7;
 }
-
 @media (max-width: 768px) {
   .about-bubble {
     padding: 2rem;
     border-radius: 30px;
   }
-
   .about-bubble h2 {
     font-size: 2rem;
   }
-
   .about-bubble p {
     font-size: 1rem;
   }
 }
-/* Logo styling */
-.logo {
-  height: 100px;      /* Taller to match navbar */
-  width: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
 
-/* Navbar height and structure */
+/* Navbar */
 .custom-navbar {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  min-height: 120px;  /* Increase height to match other content */
+  min-height: 120px;
   z-index: 1030;
   position: relative;
+  border-bottom: 2px solid var(--primary);
 }
 
-/* Fix dropdown visibility */
+/* Dropdown Fix */
 .dropdown-menu {
   z-index: 1050;
-  position: absolute; /* Required for z-index to work */
+  position: absolute;
 }
+
 
 
 
