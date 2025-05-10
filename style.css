@@ -240,3 +240,29 @@ body {
     font-size: 1rem;
   }
 }
+/* Logo styling */
+.logo {
+  height: 100px;      /* Taller to match navbar */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navbar height and structure */
+.custom-navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 120px;  /* Increase height to match other content */
+  z-index: 1030;
+  position: relative;
+}
+
+/* Fix dropdown visibility */
+.dropdown-menu {
+  z-index: 1050;
+  position: absolute; /* Required for z-index to work */
+}
+
+
+
