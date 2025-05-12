@@ -350,42 +350,42 @@
 </section>
 
 
-  <!-- Compact Quotation Form -->
-  <section class="py-5" id="quotation">
-    <div class="container" data-aos="fade-down">
-      <h3 class="mb-4 text-center">Get Your Free Quote</h3>
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-5">
-          <div class="card shadow-sm p-4">
-            <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control form-control-sm" id="name" placeholder="Your full name">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control form-control-sm" id="email" placeholder="you@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="service" class="form-label">Service Required</label>
-                <input type="text" class="form-control form-control-sm" id="service" placeholder="e.g., Plumbing">
-              </div>
-              <div class="mb-3">
-                <label for="details" class="form-label">Details</label>
-                <textarea class="form-control form-control-sm" id="details" rows="3"
-                  placeholder="Briefly describe the issue or request"></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="file" class="form-label">Upload Images/Videos</label>
-                <input type="file" class="form-control form-control-sm" id="file" multiple>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Send Request</button>
-            </form>
-          </div>
+<!-- Compact Quotation Form -->
+<section class="py-5" id="quotation">
+  <div class="container" data-aos="fade-down">
+    <h3 class="mb-4 text-center">Get Your Free Quote</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="card shadow-sm p-4">
+          <form action="https://formspree.io/f/xldbpbvl" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" name="name" class="form-control form-control-sm" id="name" placeholder="Your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control form-control-sm" id="email" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="service" class="form-label">Service Required</label>
+              <input type="text" name="service" class="form-control form-control-sm" id="service" placeholder="e.g., Plumbing">
+            </div>
+            <div class="mb-3">
+              <label for="details" class="form-label">Details</label>
+              <textarea name="details" class="form-control form-control-sm" id="details" rows="3" placeholder="Briefly describe the issue or request"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="file" class="form-label">Upload Images/Videos</label>
+              <input type="file" name="attachment" class="form-control form-control-sm" id="file" multiple>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Request</button>
+          </form>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-4" data-aos="fade-up">
