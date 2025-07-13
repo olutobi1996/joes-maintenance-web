@@ -65,6 +65,27 @@
     </div>
   </nav>
 
+  <!-- Scrolling Banner -->
+  <div class="marquee-banner text-white bg-dark py-2 overflow-hidden position-relative">
+    <div class="marquee-text text-center fw-semibold d-flex align-items-center" style="gap: 2rem; white-space: nowrap;">
+      <span><i class="fas fa-bolt"></i> Same-Day Repairs</span>
+      <span><i class="fas fa-calendar-check"></i> Annual Maintenance</span>
+      <span><i class="fas fa-wrench"></i> Plumbing</span>
+      <span><i class="fas fa-bolt"></i> Electrical</span>
+      <span><i class="fas fa-paint-roller"></i> Painting & Decorating</span>
+      <span><i class="fas fa-tree"></i> Fencing</span>
+      <span><i class="fas fa-home"></i> Roofing</span>
+      <span><i class="fas fa-tools"></i> Appliance Repairs</span>
+      <span><i class="fas fa-soap"></i> Carpet & Deep Cleaning</span>
+      <span><i class="fas fa-broom"></i> End-of-Tenancy Cleaning</span>
+      <span><i class="fas fa-leaf"></i> Garden Services</span>
+      <span><i class="fas fa-phone"></i> Free Estimates</span>
+      <span><i class="fas fa-shield-alt"></i> Fully Insured & Certified</span>
+      <span><i class="fas fa-map-marker-alt"></i> Local Experts in Cambridge</span>
+      <span><i class="fas fa-phone-square-alt"></i> Call Now: 07841 519614</span>
+    </div>
+  </div>
+
 
   <!-- Hero Section -->
   <section class="hero hero-index">
@@ -78,13 +99,15 @@
 
   <!-- About Section -->
   <section class="py-5 bg-light">
-    <div class="container" data-aos="fade-up">
-      <div class="about-bubble text-center">
+    <div class="tilt-img container" data-aos="fade-up">
+      <div class="about-bubble text-center p-5 bg-white rounded shadow-sm hover-zoom">
         <h2>About Prop-Up Services</h2>
         <p class="lead">
-          At <strong>Prop-Up Services</strong>, we specialise in reliable home repairs and property maintenance across
+          At <strong><i class="fas fa-home"></i> Prop-Up Services</strong>, we specialise in reliable home repairs and
+          property maintenance across
           Cambridge and the surrounding areas.
         </p>
+
         <p>
           Whether you're dealing with a leaky tap, planning seasonal maintenance, or managing a full renovation, our
           experienced and fully insured team delivers professional results with care and efficiency.
@@ -104,7 +127,7 @@
   <!-- Service Coverage Checklist -->
   <section class="py-5 bg-gradient text-white" style="background: linear-gradient(135deg, #2196f3 20%, #64b5f6 100%);">
     <div class="container" data-aos="fade-up">
-      <div class="bg-white text-dark rounded-4 p-5 shadow-lg">
+      <div class="bg-white text-dark rounded-4 p-5 shadow-lg hover-zoom tilt-img">
         <h2 class="text-center fw-bold mb-4">🔧 All-in-One Home Services – We’ve Got You Covered</h2>
         <p class="lead text-center">
           From quick fixes to full installations, our team delivers top-quality service across every aspect of your
@@ -659,6 +682,40 @@
       });
     });
   </script>
+  <script>
+    document.querySelectorAll(".tilt-img, .hover-zoom").forEach((el) => {
+      el.style.transition = "transform 0.3s ease";
+      el.style.transformStyle = "preserve-3d";
+      el.style.willChange = "transform";
+
+      el.addEventListener("mousemove", (e) => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = -(y - centerY) / 15;
+        const rotateY = (x - centerX) / 15;
+
+        el.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+      });
+
+      el.addEventListener("mouseleave", () => {
+        el.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
+      });
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".tilt-img"), {
+      max: 10,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.2
+    });
+  </script>
+
 </body>
 
 </html>

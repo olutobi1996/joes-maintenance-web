@@ -1,8 +1,12 @@
 :root {
-  --primary: #007BFF;       /* Bright Blue (tools & roof) */
-  --secondary: #003366;     /* Dark Blue (text: Upgrades) */
-  --accent: #00CFFF;        /* Light Blue (stars) */
-  --wave: #0096D6;          /* Wave Blue */
+  --primary: #007BFF;
+  /* Bright Blue (tools & roof) */
+  --secondary: #003366;
+  /* Dark Blue (text: Upgrades) */
+  --accent: #00CFFF;
+  /* Light Blue (stars) */
+  --wave: #0096D6;
+  /* Wave Blue */
 }
 
 /* Body */
@@ -14,202 +18,8 @@ body {
 
 /* Logo and header */
 .logo {
- width: 300px;
+  width: 300px;
   margin-bottom: 1rem;
-}
-
-/* Buttons */
-.btn {
-  background: var(--primary);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-.btn:hover {
-  background: var(--wave);
-}
-
-/* Services List */
-.services ul {
-  list-style-type: none;
-  padding: 0;
-  columns: 2;
-  gap: 1rem;
-}
-.services li {
-  background: #e0f3ff;
-  margin: 0.5rem 0;
-  padding: 0.75rem;
-  border-radius: 4px;
-  transition: transform 0.2s;
-}
-.services li:hover {
-  transform: translateX(5px);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: var(--secondary);
-  color: white;
-}
-.social-link {
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  margin-top: 0.5rem;
-}
-.social-link i {
-  margin-right: 0.5rem;
-}
-.social-link:hover {
-  color: var(--accent);
-}
-
-/* Hero Sections */
-.hero {
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 100px 0;
-  position: relative;
-  text-align: center;
-}
-
-.hero-index {
-  background-image: url('/assets/homepage.jpg');
-}
-.hero-painting {
-  background-image: url('assets/paintinghero.jpg');
-}
-.hero-roofing {
-  background-image: url('assets/roofinghero.jpg');
-}
-.hero-plumbing {
-  background-image: url('assets/plumbinghero.jpg');
-}
-.hero-general {
-  background-image: url('assets/generalrepairshero.jpg');
-}
-.hero-garden {
-  background-image: url('assets/gardenserviceshero.jpg');
-}
-.hero-fencing {
-  background-image: url('assets/fencinghero.jpg');
-}
-.hero-electrical {
-  background-image: url('assets/electricalhero.jpg');
-}
-.hero-cleaning {
-  background-image: url('assets/cleaninghero.jpg');
-}
-.hero-appliances {
-  background-image: url('assets/appliancerepairshero.jpg');
-}
-.hero-maintenance {
-  background-image: url('assets/annualmaintenancehero.jpg');
-}
-
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 60px 20px;
-  border-radius: 8px;
-}
-
-/* Images */
-.gallery-img, .roofing-img {
-  height: 200px;
-  object-fit: cover;
-  width: 100%;
-}
-
-/* Scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Animations */
-[data-aos] {
-  opacity: 0;
-  transition-property: opacity, transform;
-}
-[data-aos].aos-animate {
-  opacity: 1;
-}
-
-/* Hover Effects */
-.card, .shadow-sm, .gallery-img {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.card:hover, .gallery-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: var(--primary);
-  color: white;
-  padding: 10px 12px;
-  border-radius: 50%;
-  font-size: 18px;
-  display: none;
-  z-index: 999;
-  transition: background 0.3s;
-}
-.scroll-to-top:hover {
-  background: var(--wave);
-}
-
-.hover-zoom {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hover-zoom:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-/* About Section */
-.about-bubble {
-  background: radial-gradient(circle at top left, #e0f7fa, #ffffff);
-  border-radius: 60px;
-  padding: 3rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  animation: float 6s ease-in-out infinite;
-  font-family: 'Poppins', sans-serif;
-}
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-.about-bubble h2 {
-  font-size: 2.5rem;
-  color: var(--secondary);
-  font-weight: 700;
-}
-.about-bubble p {
-  font-size: 1.2rem;
-  color: #444;
-  line-height: 1.7;
-}
-@media (max-width: 768px) {
-  .about-bubble {
-    padding: 2rem;
-    border-radius: 30px;
-  }
-  .about-bubble h2 {
-    font-size: 2rem;
-  }
-  .about-bubble p {
-    font-size: 1rem;
-  }
 }
 
 /* Navbar */
@@ -228,6 +38,455 @@ html {
   position: absolute;
 }
 
+/* Buttons */
+.btn {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--wave);
+}
+
+/* Services List */
+.services ul {
+  list-style-type: none;
+  padding: 0;
+  columns: 2;
+  gap: 1rem;
+}
+
+.services li {
+  background: #e0f3ff;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.services li:hover {
+  transform: translateX(5px);
+}
+
+/* General section headers */
+section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary);
+  text-align: center;
+}
+
+/* Subheaders in cards or smaller headings */
+section h6 {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Paragraphs */
+section p,
+section .lead {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 1.5rem auto;
+  text-align: center;
+}
+
+/* About bubble specific text */
+.about-bubble h2 {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.about-bubble p {
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+/* About Section */
+.about-bubble {
+  background: radial-gradient(circle at top left, #e0f7fa, #ffffff);
+  border-radius: 60px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: float 6s ease-in-out infinite;
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.about-bubble h2 {
+  font-size: 2.5rem;
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.about-bubble p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .about-bubble {
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .about-bubble h2 {
+    font-size: 2rem;
+  }
+
+  .about-bubble p {
+    font-size: 1rem;
+  }
+}
+
+.about-bubble {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Service cards */
+.service-card,
+.bg-white.p-4.rounded.shadow-sm {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.service-card:hover,
+.bg-white.p-4.rounded.shadow-sm:hover {
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.35);
+  transform: scale(1.05);
+}
+
+/* Review cards */
+section.bg-light .p-4.bg-white.shadow-sm.rounded p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
+  font-weight: 600;
+  color: var(--primary);
+  text-align: right;
+}
 
 
+.social-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-top: 0.5rem;
+}
 
+.social-link i {
+  margin-right: 0.5rem;
+}
+
+.social-link:hover {
+  color: var(--accent);
+}
+
+/* Hero Sections */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  text-align: center;
+}
+
+.hero-index {
+  background-image: url('/assets/homepage.jpg');
+}
+
+.hero-painting {
+  background-image: url('assets/paintinghero.jpg');
+}
+
+.hero-roofing {
+  background-image: url('assets/roofinghero.jpg');
+}
+
+.hero-plumbing {
+  background-image: url('assets/plumbinghero.jpg');
+}
+
+.hero-general {
+  background-image: url('assets/generalrepairshero.jpg');
+}
+
+.hero-garden {
+  background-image: url('assets/gardenserviceshero.jpg');
+}
+
+.hero-fencing {
+  background-image: url('assets/fencinghero.jpg');
+}
+
+.hero-electrical {
+  background-image: url('assets/electricalhero.jpg');
+}
+
+.hero-cleaning {
+  background-image: url('assets/cleaninghero.jpg');
+}
+
+.hero-appliances {
+  background-image: url('assets/appliancerepairshero.jpg');
+}
+
+.hero-maintenance {
+  background-image: url('assets/annualmaintenancehero.jpg');
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  border-radius: 8px;
+}
+
+/* Universal image styles */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.3);
+  z-index: 10;
+}
+
+/* Images */
+.gallery-img,
+.roofing-img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Hover Effects */
+.card,
+.shadow-sm,
+.gallery-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover,
+.gallery-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--primary);
+  color: white;
+  padding: 10px 12px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: none;
+  z-index: 999;
+  transition: background 0.3s;
+}
+
+.scroll-to-top:hover {
+  background: var(--wave);
+}
+
+/* Hover Effects - Gallery & Service Cards */
+
+/* Unified Zoom Effect */
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover-zoom:hover {
+  transform: scale(1.06);
+  box-shadow: 0 16px 35px rgba(0, 123, 255, 0.4);
+  z-index: 3;
+}
+
+/* Unified Glow Effect */
+.hover-glow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.35);
+  background-color: #f8fcff;
+}
+
+/* Ensure h6 text inside cards is dark */
+.service-card h6,
+.hover-zoom h6 {
+  color: #222;
+}
+
+
+/* 🔵 Card Glow Hover Effect */
+.card:hover,
+.gallery-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 191, 255, 0.3);
+  /* light blue glow */
+  border: 1px solid var(--accent);
+}
+
+/* 💡 Icon/Content Glow on Hover */
+.glow-icon,
+.glow-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.glow-icon:hover,
+.glow-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--accent);
+  background-color: #f0fbff;
+}
+
+
+/* 💫 Service Card Glow (optional enhancement for .services li) */
+.services li:hover {
+  transform: translateX(5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
+  background: #d8f5ff;
+}
+
+/* ✨ Smooth Scale for icons or custom elements */
+.icon-hover {
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px var(--accent));
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+/* Marquee banner with slower scroll and more text */
+.marquee-banner {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-text {
+  display: inline-flex;
+  animation: scrollBanner 30s linear infinite;
+  gap: 3rem;
+}
+
+.marquee-text span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.marquee-text i {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+/* Keyframes */
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--secondary);
+  color: white;
+}
+
+/* ✉️ Contact Form Submit Button */
+form button,
+input[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+form button:hover,
+input[type="submit"]:hover {
+  background: var(--wave);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
