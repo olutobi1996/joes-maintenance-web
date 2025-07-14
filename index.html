@@ -86,7 +86,6 @@
     </div>
   </div>
 
-
   <!-- Hero Section -->
   <section class="hero hero-index">
     <div class="container hero-overlay" data-aos="zoom-in">
@@ -577,57 +576,88 @@
     </div>
   </section>
 
+  <!-- Footer -->
+  <footer class="premium-footer">
+    <div class="footer-glow-box">
+      <div class="footer-container container" data-aos="fade-up" data-aos-delay="500">
 
-  <!-- Compact Quotation Form -->
-  <section class="py-5" id="quotation">
-    <div class="container" data-aos="fade-down">
-      <h3 class="mb-4 text-center">Get Your Free Quote</h3>
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-5">
-          <div class="card shadow-sm p-4">
-            <form id="quote-form" action="https://formspree.io/f/xldbpbvl" method="POST" enctype="multipart/form-data">
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" name="name" class="form-control form-control-sm" id="name"
-                  placeholder="Your full name" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" class="form-control form-control-sm" id="email"
-                  placeholder="you@example.com" required>
-              </div>
-              <div class="mb-3">
-                <label for="service" class="form-label">Service Required</label>
-                <input type="text" name="service" class="form-control form-control-sm" id="service"
-                  placeholder="e.g., Plumbing">
-              </div>
-              <div class="mb-3">
-                <label for="details" class="form-label">Details</label>
-                <textarea name="details" class="form-control form-control-sm" id="details" rows="3"
-                  placeholder="Briefly describe the issue or request"></textarea>
-              </div>
-              <div class="mb-3">
-                <label for="file" class="form-label">Upload Images/Videos</label>
-                <input type="file" name="attachment" class="form-control form-control-sm" id="file" multiple>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Send Request</button>
+        <!-- Company Info -->
+        <div class="footer-info scroll-fade">
+          <h3>About Prop-Up Services</h3>
+          <p>We offer on-demand home improvement and repair solutions across the region — reliable, professional, and
+            tailored to your needs.</p>
+
+          <h4>Our Head Office</h4>
+          <p>
+            <span class="icon gold-icon"><i class="fas fa-map-marker-alt"></i></span>
+            Cambridge
+          </p>
+          <p>Fixing homes and properties with expert services and efficient, quality and affordable.</p>
+
+          <p>
+            <span class="icon"><i class="fas fa-phone-alt"></i></span>
+            <strong>Call us:</strong>
+            <a href="tel:07841519614">07841519614</a>
+          </p>
+
+          <p>
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <strong>Email:</strong>
+            <a href="mailto:office@prop-up-services.com">office@prop-up-services.com</a>
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="footer-form scroll-fade">
+          <h4>Request a Service</h4>
+          <div class="form-card">
+            <form action="https://formspree.io/f/xldbpbvl" method="POST" enctype="multipart/form-data"
+              class="contact-form">
+
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="tel" name="phone" placeholder="Phone Number">
+              <input type="email" name="email" placeholder="Email Address" required>
+              <input type="text" name="service" placeholder="Service Required">
+
+              <textarea name="details" placeholder="Briefly describe the issue or request" rows="3"></textarea>
+              <input type="file" name="attachment" multiple>
+
+              <button type="submit" class="cta-button">Send Request</button>
             </form>
           </div>
         </div>
+
+        <!-- Newsletter Subscribe -->
+        <div class="footer-subscribe scroll-fade">
+          <h4>Stay Connected</h4>
+          <p>Sign up to get updates, offers, and helpful tips from Prop-Up Services.</p>
+          <form action="https://formspree.io/f/xvoegzdk" method="POST" class="subscribe-form">
+            <div class="subscribe-box">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <button type="submit" class="cta-button">Subscribe</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </section>
 
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4" data-aos="fade-up">
-    <div class="container d-flex justify-content-between align-items-center">
-      <p class="mb-0">&copy; 2025 Prop-Up Services. All rights reserved.</p>
-      <a href="https://www.facebook.com/share/19eVURJwJv/?mibextid=wwXIfr" class="text-white" target="_blank">
-        <i class="fab fa-facebook fa-lg"></i>
-      </a>
+    <!-- Footer Bottom -->
+    <div id="footer-bottom">
+      <div class="container footer-bottom-content">
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/share/19eVURJwJv/?mibextid=wwXIfr" target="_blank"
+              aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p id="footer-info">
+          &copy; 2025 <a href="#">Prop-Up Services</a>. All rights reserved.
+        </p>
+      </div>
     </div>
   </footer>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

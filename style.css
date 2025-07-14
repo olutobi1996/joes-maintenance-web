@@ -83,12 +83,6 @@ section h2 {
   text-align: center;
 }
 
-/* Subheaders in cards or smaller headings */
-section h6 {
-  font-weight: 600;
-  color: var(--primary);
-}
-
 /* Paragraphs */
 section p,
 section .lead {
@@ -174,12 +168,14 @@ section .lead {
 .bg-white.p-4.rounded.shadow-sm {
   cursor: pointer;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .service-card:hover,
 .bg-white.p-4.rounded.shadow-sm:hover {
   box-shadow: 0 12px 30px rgba(0, 123, 255, 0.35);
   transform: scale(1.05);
+  z-index: 2;
 }
 
 /* Review cards */
@@ -196,7 +192,7 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   text-align: right;
 }
 
-
+/* Social link */
 .social-link {
   display: inline-block;
   color: white;
@@ -222,49 +218,17 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   text-align: center;
 }
 
-.hero-index {
-  background-image: url('/assets/homepage.jpg');
-}
-
-.hero-painting {
-  background-image: url('assets/paintinghero.jpg');
-}
-
-.hero-roofing {
-  background-image: url('assets/roofinghero.jpg');
-}
-
-.hero-plumbing {
-  background-image: url('assets/plumbinghero.jpg');
-}
-
-.hero-general {
-  background-image: url('assets/generalrepairshero.jpg');
-}
-
-.hero-garden {
-  background-image: url('assets/gardenserviceshero.jpg');
-}
-
-.hero-fencing {
-  background-image: url('assets/fencinghero.jpg');
-}
-
-.hero-electrical {
-  background-image: url('assets/electricalhero.jpg');
-}
-
-.hero-cleaning {
-  background-image: url('assets/cleaninghero.jpg');
-}
-
-.hero-appliances {
-  background-image: url('assets/appliancerepairshero.jpg');
-}
-
-.hero-maintenance {
-  background-image: url('assets/annualmaintenancehero.jpg');
-}
+.hero-index { background-image: url('/assets/homepage.jpg'); }
+.hero-painting { background-image: url('assets/paintinghero.jpg'); }
+.hero-roofing { background-image: url('assets/roofinghero.jpg'); }
+.hero-plumbing { background-image: url('assets/plumbinghero.jpg'); }
+.hero-general { background-image: url('assets/generalrepairshero.jpg'); }
+.hero-garden { background-image: url('assets/gardenserviceshero.jpg'); }
+.hero-fencing { background-image: url('assets/fencinghero.jpg'); }
+.hero-electrical { background-image: url('assets/electricalhero.jpg'); }
+.hero-cleaning { background-image: url('assets/cleaninghero.jpg'); }
+.hero-appliances { background-image: url('assets/appliancerepairshero.jpg'); }
+.hero-maintenance { background-image: url('assets/annualmaintenancehero.jpg'); }
 
 .hero-overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -288,7 +252,7 @@ img:hover {
   z-index: 10;
 }
 
-/* Images */
+/* Specific image sizes */
 .gallery-img,
 .roofing-img {
   height: 200px;
@@ -311,19 +275,62 @@ html {
   opacity: 1;
 }
 
-/* Hover Effects */
+/* Hover & Zoom Effects */
 .card,
-.shadow-sm,
-.gallery-img {
+.gallery-img,
+.hover-zoom {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover,
-.gallery-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+.gallery-img:hover,
+.hover-zoom:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.3);
+  z-index: 2;
 }
 
+/* Optional: Restrict special glow to specific cards */
+.card.card-glow:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 25px rgba(0, 191, 255, 0.3);
+  border: 1px solid var(--accent);
+}
+
+/* Glow icons & boxes */
+.glow-icon,
+.glow-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.glow-icon:hover,
+.glow-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--accent);
+  background-color: #f0fbff;
+}
+
+/* Service list items hover */
+.services li:hover {
+  transform: translateX(5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
+  background: #d8f5ff;
+}
+
+/* Icon scale hover */
+.icon-hover {
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon-hover:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px var(--accent));
+}
+
+/* Scroll to top button */
 .scroll-to-top {
   position: fixed;
   bottom: 30px;
@@ -342,93 +349,7 @@ html {
   background: var(--wave);
 }
 
-/* Hover Effects - Gallery & Service Cards */
-
-/* Unified Zoom Effect */
-.hover-zoom {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  will-change: transform;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-.hover-zoom:hover {
-  transform: scale(1.06);
-  box-shadow: 0 16px 35px rgba(0, 123, 255, 0.4);
-  z-index: 3;
-}
-
-/* Unified Glow Effect */
-.hover-glow {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-glow:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 191, 255, 0.35);
-  background-color: #f8fcff;
-}
-
-/* Ensure h6 text inside cards is dark */
-.service-card h6,
-.hover-zoom h6 {
-  color: #222;
-}
-
-
-/* 🔵 Card Glow Hover Effect */
-.card:hover,
-.gallery-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 25px rgba(0, 191, 255, 0.3);
-  /* light blue glow */
-  border: 1px solid var(--accent);
-}
-
-/* 💡 Icon/Content Glow on Hover */
-.glow-icon,
-.glow-box {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 10px;
-}
-
-.glow-icon:hover,
-.glow-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px var(--accent);
-  background-color: #f0fbff;
-}
-
-
-/* 💫 Service Card Glow (optional enhancement for .services li) */
-.services li:hover {
-  transform: translateX(5px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
-  background: #d8f5ff;
-}
-
-/* ✨ Smooth Scale for icons or custom elements */
-.icon-hover {
-  display: inline-block;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.icon-hover:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 6px var(--accent));
-}
-
-.hover-zoom {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  will-change: transform;
-}
-
-.hover-zoom:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  z-index: 2;
-}
-
-/* Marquee banner with slower scroll and more text */
+/* Marquee */
 .marquee-banner {
   white-space: nowrap;
   overflow: hidden;
@@ -453,40 +374,163 @@ html {
   font-size: 1.1rem;
 }
 
-/* Keyframes */
 @keyframes scrollBanner {
-  0% {
-    transform: translateX(100%);
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+/*------------------------------------
+  Premium Footer - White & Blue Theme
+------------------------------------*/
+
+/* Footer Wrapper */
+.premium-footer {
+  background-color: #ffffff; /* Changed from black to white */
+  color: #003366; /* Deep blue for readable text */
+  padding-top: 4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Grid Layout */
+.premium-footer .footer-container {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1.2fr;
+  gap: 3rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .premium-footer .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
-  100% {
-    transform: translateX(-100%);
+  .footer-subscribe {
+    order: 3;
   }
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: var(--secondary);
-  color: white;
+/* Headings */
+.premium-footer h3,
+.premium-footer h4 {
+  color: #002b5c; /* Navy blue */
+  margin-bottom: 1rem;
 }
 
-/* ✉️ Contact Form Submit Button */
-form button,
-input[type="submit"] {
-  background: var(--primary);
-  color: white;
+/* Info Links */
+.footer-info a[href^="tel"],
+.footer-info a[href^="mailto"],
+.footer-info i.fa-phone-alt,
+.footer-info i.fa-envelope {
+  color: #007BFF; /* Bootstrap blue */
+  font-weight: bold;
+}
+
+.gold-icon i.fa-map-marker-alt {
+  color: #007BFF; /* Replace "gold" icon color */
+}
+
+.footer-info .icon {
+  margin-right: 0.5rem;
+  color: #007BFF;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea,
+.contact-form input[type="file"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  color: #003366;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  background-color: #fff;
+  outline: 2px solid #007BFF;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #007BFF;
+  background-color: #fff;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 600;
+  border-radius: 4px;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-form button:hover,
-input[type="submit"]:hover {
-  background: var(--wave);
+.cta-button:hover {
+  background-color: #0056b3;
   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
 }
+
+/* Subscribe Form */
+.subscribe-box {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.subscribe-box input[type="email"] {
+  flex: 1;
+}
+
+/* Footer Bottom */
+#footer-bottom {
+  padding: 2rem 1rem 1rem;
+  background-color: #f5faff; /* Very light blue */
+  color: #003366;
+  text-align: center;
+}
+
+.footer-bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Social Icons */
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #007BFF;
+  font-size: 1.4rem;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 0.75;
+}
+
+/* Footer Info */
+#footer-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+

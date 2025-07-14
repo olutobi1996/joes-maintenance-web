@@ -57,6 +57,26 @@
     </div>
   </nav>
 
+  <!-- Scrolling Banner -->
+  <div class="marquee-banner text-white bg-dark py-2 overflow-hidden position-relative">
+    <div class="marquee-text text-center fw-semibold d-flex align-items-center" style="gap: 2rem; white-space: nowrap;">
+      <span><i class="fas fa-bolt"></i> Same-Day Repairs</span>
+      <span><i class="fas fa-calendar-check"></i> Annual Maintenance</span>
+      <span><i class="fas fa-wrench"></i> Plumbing</span>
+      <span><i class="fas fa-bolt"></i> Electrical</span>
+      <span><i class="fas fa-paint-roller"></i> Painting & Decorating</span>
+      <span><i class="fas fa-tree"></i> Fencing</span>
+      <span><i class="fas fa-home"></i> Roofing</span>
+      <span><i class="fas fa-tools"></i> Appliance Repairs</span>
+      <span><i class="fas fa-soap"></i> Carpet & Deep Cleaning</span>
+      <span><i class="fas fa-broom"></i> End-of-Tenancy Cleaning</span>
+      <span><i class="fas fa-leaf"></i> Garden Services</span>
+      <span><i class="fas fa-phone"></i> Free Estimates</span>
+      <span><i class="fas fa-shield-alt"></i> Fully Insured & Certified</span>
+      <span><i class="fas fa-map-marker-alt"></i> Local Experts in Cambridge</span>
+      <span><i class="fas fa-phone-square-alt"></i> Call Now: 07841 519614</span>
+    </div>
+  </div>
 
   <!-- Hero Section -->
   <section class="hero hero-plumbing" data-aos="zoom-in">
@@ -68,8 +88,8 @@
 
   <!-- About Plumbing Services -->
   <section class="py-5">
-    <div class="container" data-aos="fade-up">
-      <div class="about-bubble text-center">
+    <div class="tilt-img container" data-aos="fade-up">
+      <div class="about-bubble text-center p-5 bg-white rounded shadow-sm hover-zoom">
         <h2>About Our Plumbing Services</h2>
         <p class="lead">
           From emergency pipe bursts to kitchen tap upgrades, <strong>Prop-Up Services</strong> handles it all with
@@ -92,7 +112,7 @@
   <!-- Service Description -->
   <section class="py-5 bg-gradient text-white" style="background: linear-gradient(135deg, #0d6efd 20%, #6610f2 100%);">
     <div class="container" data-aos="fade-up">
-      <div class="bg-white text-dark rounded-4 p-5 shadow-lg">
+      <div class="bg-white text-dark rounded-4 p-5 shadow-lg tilt-img hover-zoom">
         <h2 class="text-center fw-bold mb-4">🚿 Dependable Plumbing, Done Right</h2>
         <p class="lead text-center">
           At <strong>Prop-Up Services</strong>, we provide fast, friendly, and affordable plumbing work across
@@ -242,21 +262,21 @@
       <h3 class="mb-4 text-center">What Our Clients Say</h3>
       <div class="row g-4">
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="p-3 bg-white border rounded shadow-sm">
+          <div class="tilt-img hover-zoom p-4 bg-white shadow-sm rounded">
             <p class="mb-1">“They arrived within an hour and fixed our burst pipe quickly. Super helpful and
               professional.”</p>
             <strong>– James R., Cambridge</strong>
           </div>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="p-3 bg-white border rounded shadow-sm">
+          <div class="tilt-img hover-zoom p-4 bg-white shadow-sm rounded">
             <p class="mb-1">“We had a blocked kitchen sink. They sorted it in no time and even gave some great tips.”
             </p>
             <strong>– Lily S., Newnham</strong>
           </div>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="p-3 bg-white border rounded shadow-sm">
+          <div class="tilt-img hover-zoom p-4 bg-white shadow-sm rounded">
             <p class="mb-1">“Affordable and tidy job installing our new bathroom suite. Highly recommend!”</p>
             <strong>– Alex M., Chesterton</strong>
           </div>
@@ -298,71 +318,173 @@
     </div>
   </section>
 
- <!-- Compact Quotation Form -->
-<section class="py-5" id="quotation">
-  <div class="container" data-aos="fade-down">
-    <h3 class="mb-4 text-center">Get a Plumbing Quote</h3>
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-5">
-        <div class="card shadow-sm p-4">
-          <form action="https://formspree.io/f/xldbpbvl" method="POST" enctype="multipart/form-data">
-            <input type="hidden" name="_redirect" value="https://prop-up-services.netlify.app/thank-you.html">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" name="name" class="form-control form-control-sm" id="name" placeholder="Your full name" required>
+  <!-- Footer -->
+  <footer class="premium-footer">
+    <div class="footer-glow-box">
+      <div class="footer-container container" data-aos="fade-up" data-aos-delay="500">
+
+        <!-- Company Info -->
+        <div class="footer-info scroll-fade">
+          <h3>About Prop-Up Services</h3>
+          <p>We offer on-demand home improvement and repair solutions across the region — reliable, professional, and
+            tailored to your needs.</p>
+
+          <h4>Our Head Office</h4>
+          <p>
+            <span class="icon gold-icon"><i class="fas fa-map-marker-alt"></i></span>
+            Cambridge
+          </p>
+          <p>Fixing homes and properties with expert services and efficient, quality and affordable.</p>
+
+          <p>
+            <span class="icon"><i class="fas fa-phone-alt"></i></span>
+            <strong>Call us:</strong>
+            <a href="tel:07841519614">07841519614</a>
+          </p>
+
+          <p>
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <strong>Email:</strong>
+            <a href="mailto:office@prop-up-services.com">office@prop-up-services.com</a>
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="footer-form scroll-fade">
+          <h4>Request a Service</h4>
+          <div class="form-card">
+            <form action="https://formspree.io/f/xldbpbvl" method="POST" enctype="multipart/form-data"
+              class="contact-form">
+
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="tel" name="phone" placeholder="Phone Number">
+              <input type="email" name="email" placeholder="Email Address" required>
+              <input type="text" name="service" placeholder="Service Required">
+
+              <textarea name="details" placeholder="Briefly describe the issue or request" rows="3"></textarea>
+              <input type="file" name="attachment" multiple>
+
+              <button type="submit" class="cta-button">Send Request</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Newsletter Subscribe -->
+        <div class="footer-subscribe scroll-fade">
+          <h4>Stay Connected</h4>
+          <p>Sign up to get updates, offers, and helpful tips from Prop-Up Services.</p>
+          <form action="https://formspree.io/f/xvoegzdk" method="POST" class="subscribe-form">
+            <div class="subscribe-box">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <button type="submit" class="cta-button">Subscribe</button>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" class="form-control form-control-sm" id="email" placeholder="you@example.com" required>
-            </div>
-            <div class="mb-3">
-              <label for="service" class="form-label">Service Required</label>
-              <select name="service" class="form-select form-select-sm" id="service" required>
-                <option disabled selected>Select a service</option>
-                <option value="Leak Repair">Leak Repair</option>
-                <option value="Bathroom/Kitchen Installation">Bathroom/Kitchen Installation</option>
-                <option value="Blocked Drain or Sink">Blocked Drain or Sink</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="details" class="form-label">Details</label>
-              <textarea name="details" class="form-control form-control-sm" id="details" rows="3"
-                placeholder="Briefly describe the issue or request"></textarea>
-            </div>
-            <div class="mb-3">
-              <label for="file" class="form-label">Upload Images/Videos</label>
-              <input type="file" name="attachment" class="form-control form-control-sm" id="file" multiple>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Send Request</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3" data-aos="fade-up">
-    <div class="container">
-      <p class="mb-1">&copy; 2025 Prop-Up Services. All rights reserved.</p>
-      <p>Serving Cambridge & surrounding areas</p>
+    <!-- Footer Bottom -->
+    <div id="footer-bottom">
+      <div class="container footer-bottom-content">
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/share/19eVURJwJv/?mibextid=wwXIfr" target="_blank"
+              aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a></li>
+        </ul>
+        <p id="footer-info">
+          &copy; 2025 <a href="#">Prop-Up Services</a>. All rights reserved.
+        </p>
+      </div>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+  <!-- Init Scripts -->
   <script>
     AOS.init({ duration: 800, once: true });
+
     let lastScrollTop = 0;
     window.addEventListener("scroll", function () {
       let currentScroll = window.scrollY || document.documentElement.scrollTop;
       if (currentScroll < lastScrollTop) {
-        AOS.refresh(); // retrigger when scrolling up
+        AOS.refresh();
       }
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     }, false);
+
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel': "Image %1 of %2"
+    });
+  </script>
+  <!-- Formspree AJAX Submit Script -->
+  <script>
+    const form = document.getElementById("quote-form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+
+      fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          window.location.href = "https://prop-up-services.netlify.app/thank-you.html";
+        } else {
+          alert("There was an issue sending your request. Please try again.");
+        }
+      }).catch(error => {
+        console.error("Submission error:", error);
+        alert("Something went wrong. Please try again.");
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll(".tilt-img, .hover-zoom").forEach((el) => {
+      el.style.transition = "transform 0.3s ease";
+      el.style.transformStyle = "preserve-3d";
+      el.style.willChange = "transform";
+
+      el.addEventListener("mousemove", (e) => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = -(y - centerY) / 15;
+        const rotateY = (x - centerX) / 15;
+
+        el.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+      });
+
+      el.addEventListener("mouseleave", () => {
+        el.style.transform = "rotateX(0deg) rotateY(0deg) scale(1)";
+      });
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".tilt-img"), {
+      max: 10,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.2
+    });
   </script>
 </body>
 
