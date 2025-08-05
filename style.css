@@ -291,39 +291,29 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   background-image: url('assets/annualmaintenancehero.jpg');
 }
 
-
-.horizontal-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 200px;
-  gap: 15px;
-}
-
+/* Facebook Video */
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-.gallery-item img {
+.video-wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
-
-.gallery-item.wide {
-  grid-column: span 2;
-}
-
-.gallery-item.tall {
-  grid-row: span 2;
-}
-
-.gallery-item.medium {
-  grid-column: span 1;
-  grid-row: span 1.5;
+.gallery-item p {
+  font-size: 1rem;
+  color: #444;
 }
 
 
