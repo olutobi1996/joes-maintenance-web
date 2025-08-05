@@ -215,27 +215,34 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
 }
 
 /* Video full cover behind text */
-.hero-video {
+.facebook-video-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  z-index: 0;
+  overflow: hidden;
 }
 
-/* Remove background image from hero-index if using video */
-.hero-index {
-  background-image: none !important;
+.facebook-video-bg iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: auto; /* or just remove the pointer-events line */
+
 }
 
-/* Text overlay styles */
 .hero-overlay {
+  position: relative;
+  pointer-events: auto; /* enable interaction */
   z-index: 1;
-  padding: 100px 20px;
-    color: white !important; /* Force text color to white */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 /* Optional: add darker overlay for contrast */
 .hero::before {
@@ -250,6 +257,14 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   z-index: 0;
 }
 
+.video-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none; /* so clicks pass through */
+}
 
 .hero-painting {
   background-image: url('assets/paintinghero.jpg');
@@ -292,23 +307,28 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
 }
 
 /* Facebook Video Styling */
+.vertical-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 30px;
+}
+
+
 .gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin: 20px;
-  max-width: 280px;
+  width: 100%;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
 }
 
 .video-wrapper {
-  position: relative;  /* 👈 Required for iframe absolute positioning */
-  width: 100%;
-  padding-top: 180%; /* 👈 Controls the height of the video area (adjust as needed) */
+  position: relative;
+  padding-top: 177.77%; /* 9:16 Aspect Ratio */
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .video-wrapper iframe {
   position: absolute;
@@ -316,15 +336,47 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border: none;
 }
 
+.video-caption {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--primary);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.video-caption i {
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+/* Fallback for gallery-item p without icons */
 .gallery-item p {
   font-size: 1rem;
-  color: #444;
+  font-style: italic;
+  color: var(--primary);
   text-align: center;
   margin-top: 10px;
 }
 
+@media (max-width: 576px) {
+  .gallery-item {
+    padding: 15px;
+  }
+
+  .video-caption,
+  .gallery-item p {
+    font-size: 0.95rem;
+  }
+}
 
 /* Universal image styles */
 img {
