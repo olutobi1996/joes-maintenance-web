@@ -208,43 +208,93 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   color: var(--accent);
 }
 
+/* Facebook Hero */
 .hero-index {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  background-color: var(--wave);
 }
 
-/* Video full cover behind text */
-.facebook-video-bg {
+/* BLURRED BACKGROUND */
+.facebook-video-bg.blurred-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
   overflow: hidden;
+  z-index: 0;
+  filter: blur(50px) brightness(0.8);
+  background-color: var(--wave);
+  box-shadow: 0 0 100px var(--accent); /* glow effect */
 }
 
 .facebook-video-bg iframe {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
   border: none;
-  pointer-events: auto; /* or just remove the pointer-events line */
-
+  pointer-events: none;
 }
 
-.hero-overlay {
-  position: relative;
-  pointer-events: auto; /* enable interaction */
+/* FOREGROUND VIDEO */
+.facebook-video-center {
+  max-width: 500px;
+  margin: 0 auto;
   z-index: 1;
-  min-height: 100vh;
+  position: relative;
+  /* Remove the background and padding */
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.facebook-video-center iframe {
+  width: 500px; /* or 600px */
+  height: 888px; /* match 16:9 or vertical format */
+  border: none;
+  pointer-events: auto; /* allow clicks */
+  cursor: pointer; /* optional: show pointer on hover */
+ box-shadow: 0 0 30px 8px #00bfff; /* bright blue glow */
+}
+
+/* Overlay content aligned to bottom */
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  max-width: 500px; /* Same as video width */
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+   pointer-events: none; /* allow clicks through */
 }
 
+.hero-overlay h1,
+.hero-overlay a {
+  pointer-events: auto;
+  max-width: 100%;
+}
 
-/* Optional: add darker overlay for contrast */
+.hero-overlay h1 {
+  font-size: 1.75rem; /* Slightly smaller heading */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero.hero-index {
+  background-color:#f8f9fa; 
+}
+
+/* Optional: subtle overlay with brand gradient */
 .hero::before {
   content: "";
   position: absolute;
@@ -252,19 +302,20 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  /* Adjust opacity as needed */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3)
+  ); /* Soft white tint instead of blue */
   z-index: 0;
 }
 
-.video-bg {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  pointer-events: none; /* so clicks pass through */
+@media (max-aspect-ratio: 9/16) {
+  .facebook-video-bg iframe {
+    width: 100vw;
+    height: 56.25vw; /* 16:9 aspect ratio for vertical screens */
+  }
 }
+
 
 .hero-painting {
   background-image: url('assets/paintinghero.jpg');
@@ -309,7 +360,8 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
 /* Facebook Video Styling */
 .vertical-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 equal columns */
   gap: 30px;
 }
 
@@ -324,11 +376,13 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
 
 .video-wrapper {
   position: relative;
-  padding-top: 177.77%; /* 9:16 Aspect Ratio */
+  padding-top: 177.77%; /* 9:16 aspect ratio */
+  background-color: rgba(0, 123, 255, 0.08); /* optional subtle blue background */
   border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.4); /* blue glow */
+  transition: box-shadow 0.3s ease;
 }
-
 
 .video-wrapper iframe {
   position: absolute;
@@ -496,6 +550,8 @@ html {
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  background-color: #002147;
+   margin-bottom: 2rem; /* Adjust spacing as needed */
 }
 
 .marquee-text {

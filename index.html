@@ -80,7 +80,7 @@
     </nav>
 
     <!-- Scrolling Banner -->
-    <div class="marquee-banner text-white bg-dark py-2 overflow-hidden position-relative">
+    <div class="marquee-banner text-white py-2 overflow-hidden position-relative">
         <div class="marquee-text text-center fw-semibold d-flex align-items-center"
             style="gap: 2rem; white-space: nowrap;">
             <span><i class="fas fa-bolt"></i> Same-Day Repairs</span>
@@ -101,20 +101,16 @@
         </div>
     </div>
 
-
-    <!-- Hero Section with Embedded Facebook Video Background -->
+    <!-- Facebook Hero -->
     <section class="hero hero-index position-relative">
 
-        <!-- Facebook Video as Background -->
-        <div class="facebook-video-bg">
+        <div class="facebook-video-center tilt-img">
             <iframe
-                src="https://www.facebook.com/plugins/video.php?height=500&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046320603726160%2F&show_text=false&width=800"
+                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046320603726160%2F&show_text=false&autoplay=true&mute=1&controls=0&width=500&height=888"
                 frameborder="0" allowfullscreen
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
             </iframe>
-
         </div>
-
         <!-- Overlay Content -->
         <div
             class="container text-white text-center d-flex flex-column justify-content-center align-items-center hero-overlay">
@@ -324,9 +320,8 @@
             <h2 class="text-center mb-5">Our Latest Work</h2>
 
             <div class="vertical-gallery">
-
                 <!-- Video 1: Garden Tidy -->
-                <div class="gallery-item mb-5" data-aos="fade-up">
+                <div class="gallery-item mb-5 tilt-img" data-aos="fade-up" data-aos-delay="300">
                     <div class="video-wrapper">
                         <iframe
                             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2782690281932597%2F&show_text=false&t=0"
@@ -337,12 +332,12 @@
                     </div>
                     <p class="video-caption mt-3">
                         <i class="fas fa-leaf"></i>
-                        Garden tidy up – before and after transformation!
+                        Garden tidy – before & after!
                     </p>
                 </div>
 
                 <!-- Video 2: Rubbish Removal -->
-                <div class="gallery-item mb-5" data-aos="fade-up" data-aos-delay="100">
+                <div class="gallery-item mb-5 tilt-img" data-aos="fade-up" data-aos-delay="400">
                     <div class="video-wrapper">
                         <iframe
                             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1239691184093734%2F&show_text=false&t=0"
@@ -358,7 +353,7 @@
                 </div>
 
                 <!-- Video 3: Painting Work -->
-                <div class="gallery-item mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item mb-5 tilt-img" data-aos="fade-up" data-aos-delay="500">
                     <div class="video-wrapper">
                         <iframe
                             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F2784134871783415%2F&show_text=false&t=0"
@@ -369,11 +364,61 @@
                     </div>
                     <p class="video-caption mt-3">
                         <i class="fas fa-paint-roller"></i>
-                        Fresh Coat of Paint for Our Clients
+                        Fresh paint refresh for our client
+                    </p>
+                </div>
+
+                <!-- Video 4: Cottage Redecoration -->
+                <div class="gallery-item mb-5 tilt-img" data-aos="fade-up" data-aos-delay="600">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1527290734900940%2F&show_text=true&width=267&t=0"
+                            width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no"
+                            frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <p class="video-caption mt-3">
+                        <i class="fas fa-home"></i>
+                        Full redecoration & deep clean for local lettings agent
+                    </p>
+                </div>
+
+                <!-- Video 5: New Carpet Installation -->
+                <div class="gallery-item mb-5 tilt-img" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1780455496202730%2F&show_text=true&width=267&t=0"
+                            width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no"
+                            frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <p class="video-caption mt-3">
+                        <i class="fas fa-rug"></i>
+                        New hard-wearing carpets for rental
+                    </p>
+                </div>
+
+                <!-- Video 6: Tenancy Cleans -->
+                <div class="gallery-item mb-5 tilt-img" data-aos="fade-up" data-aos-delay="700">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1167411755068684%2F&show_text=true&width=267&t=0"
+                            width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no"
+                            frameborder="0" allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <p class="video-caption mt-3">
+                        <i class="fas fa-sun"></i>
+                        End of tenancy cleans in sunny Cambridge
                     </p>
                 </div>
             </div>
+        </div>
     </section>
+
 
     <!-- Reviews Section -->
     <section class="bg-light py-5">
