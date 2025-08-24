@@ -227,7 +227,8 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   z-index: 0;
   filter: blur(50px) brightness(0.8);
   background-color: var(--wave);
-  box-shadow: 0 0 100px var(--accent); /* glow effect */
+  box-shadow: 0 0 100px var(--accent);
+  /* glow effect */
 }
 
 .facebook-video-bg iframe {
@@ -243,6 +244,7 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
 
 /* FOREGROUND VIDEO */
 .facebook-video-center {
+  width: 100%;
   max-width: 500px;
   margin: 0 auto;
   z-index: 1;
@@ -254,12 +256,19 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
 }
 
 .facebook-video-center iframe {
-  width: 500px; /* or 600px */
-  height: 888px; /* match 16:9 or vertical format */
+  width: 500px;
+  /* or 600px */
+  height: 888px;
+  /* match 16:9 or vertical format */
   border: none;
-  pointer-events: auto; /* allow clicks */
-  cursor: pointer; /* optional: show pointer on hover */
- box-shadow: 0 0 30px 8px #00bfff; /* bright blue glow */
+  aspect-ratio: 9 / 16;
+  /* Keeps vertical format responsive */
+  pointer-events: auto;
+  /* allow clicks */
+  cursor: pointer;
+  /* optional: show pointer on hover */
+  box-shadow: 0 0 30px 8px #00bfff;
+  /* bright blue glow */
 }
 
 /* Overlay content aligned to bottom */
@@ -269,13 +278,15 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   left: 0;
   right: 0;
   z-index: 2;
-  max-width: 500px; /* Same as video width */
+  max-width: 500px;
+  /* Same as video width */
   padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-   pointer-events: none; /* allow clicks through */
+  pointer-events: none;
+  /* allow clicks through */
 }
 
 .hero-overlay h1,
@@ -285,13 +296,13 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
 }
 
 .hero-overlay h1 {
-  font-size: 1.75rem; /* Slightly smaller heading */
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .hero.hero-index {
-  background-color:#f8f9fa; 
+  background-color: #f8f9fa;
 }
 
 /* Optional: subtle overlay with brand gradient */
@@ -302,17 +313,17 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0.3)
-  ); /* Soft white tint instead of blue */
+  background: linear-gradient(rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3));
+  /* Soft white tint instead of blue */
   z-index: 0;
 }
 
 @media (max-aspect-ratio: 9/16) {
   .facebook-video-bg iframe {
     width: 100vw;
-    height: 56.25vw; /* 16:9 aspect ratio for vertical screens */
+    height: 56.25vw;
+    /* 16:9 aspect ratio for vertical screens */
   }
 }
 
@@ -357,17 +368,17 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   background-image: url('assets/annualmaintenancehero.jpg');
 }
 
-/* Facebook Video Styling */
+/* Facebook Video Styling Services  */
 .vertical-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 equal columns */
+  /* 3 per row desktop */
   gap: 30px;
 }
 
-
 .gallery-item {
   width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
@@ -376,12 +387,12 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
 
 .video-wrapper {
   position: relative;
-  padding-top: 177.77%; /* 9:16 aspect ratio */
-  background-color: rgba(0, 123, 255, 0.08); /* optional subtle blue background */
+  padding-top: 177.77%;
+  /* 9:16 aspect ratio */
+  background-color: rgba(0, 123, 255, 0.08);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 25px rgba(0, 123, 255, 0.4); /* blue glow */
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.4);
 }
 
 .video-wrapper iframe {
@@ -390,8 +401,8 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border: none;
+  object-fit: cover;
 }
 
 .video-caption {
@@ -412,25 +423,21 @@ section.bg-light .p-4.bg-white.shadow-sm.rounded h6 {
   color: var(--accent);
 }
 
-/* Fallback for gallery-item p without icons */
-.gallery-item p {
-  font-size: 1rem;
-  font-style: italic;
-  color: var(--primary);
-  text-align: center;
-  margin-top: 10px;
+/* ✅ Responsive Breakpoints */
+@media (max-width: 991px) {
+  .vertical-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 per row on tablets */
+  }
 }
 
 @media (max-width: 576px) {
-  .gallery-item {
-    padding: 15px;
-  }
-
-  .video-caption,
-  .gallery-item p {
-    font-size: 0.95rem;
+  .vertical-gallery {
+    grid-template-columns: 1fr;
+    /* 1 per row on phones */
   }
 }
+
 
 /* Universal image styles */
 img {
@@ -545,43 +552,51 @@ html {
   background: var(--wave);
 }
 
-/* Marquee */
+/* Marquee Banner */
 .marquee-banner {
-  white-space: nowrap;
   overflow: hidden;
   position: relative;
   background-color: #002147;
-   margin-bottom: 2rem; /* Adjust spacing as needed */
+  margin-bottom: 2rem;
 }
 
-.marquee-text {
+.marquee-track {
   display: inline-flex;
-  animation: scrollBanner 30s linear infinite;
-  gap: 3rem;
+  white-space: nowrap;
+  animation: scrollBanner 40s linear infinite;
+  /* adjust 40s for speed */
 }
 
-.marquee-text span {
-  display: flex;
+.marquee-track span {
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
+  padding: 0 2rem;
+  white-space: nowrap;
 }
 
-.marquee-text i {
+.marquee-track i {
   color: var(--accent);
   font-size: 1.1rem;
 }
 
-@keyframes scrollBanner {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+/* Duplicate the content automatically for seamless looping */
+.marquee-track::after {
+  content: attr(data-duplicate);
+  display: inline-flex;
 }
 
+/* Animation */
+@keyframes scrollBanner {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 /*------------------------------------
   Premium Footer - White & Blue Theme

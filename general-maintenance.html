@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prop-Up Services | Garden Services</title>
+  <title>Prop-Up Services | Roofing</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
   <!-- AOS CSS -->
@@ -19,8 +20,8 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm custom-navbar" data-aos="fade-down">
     <div class="container d-flex flex-column align-items-center">
-      <a class="navbar-brand mx-auto" href="index.html">
-        <img src="assets/propuplogo.jpg" alt="PropUp Logo" class="logo">
+      <a class="navbar-brand mx-auto d-flex flex-column align-items-center" href="index.html">
+        <img src="assets/propuplogo.jpg" alt="PropUp Logo" class="logo mb-1">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -30,24 +31,24 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="general-repairs.html">General Repairs</a></li>
-              <li><a class="dropdown-item" href="annual-maintenance.html">Annual Maintenance</a></li>
-              <li><a class="dropdown-item" href="painting.html">Painting & Decorating</a></li>
+              <li><a class="dropdown-item" href="refurbishments.html">Refurbishments</a></li>
+              <li><a class="dropdown-item" href="cleaning.html">Cleaning</a></li>
+              <li><a class="dropdown-item" href="general-maintenance.html">General Maintenance</a></li>
               <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
               <li><a class="dropdown-item" href="electrical.html">Electrical</a></li>
-              <li><a class="dropdown-item" href="cleaning.html">Cleaning</a></li>
-              <li><a class="dropdown-item" href="garden-services.html">Garden Services</a></li>
-              <li><a class="dropdown-item" href="fencing.html">Fencing</a></li>
-              <li><a class="dropdown-item" href="roofing.html">Roofing</a></li>
-              <li><a class="dropdown-item" href="appliance-repairs.html">Appliance Repairs</a></li>
+              <li><a class="dropdown-item" href="gardening.html">Gardening</a></li>
+
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="mailto:joehood2014@gmail.com"><i class="fas fa-envelope"></i>
-              Email Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="tel:07841519614"><i class="fas fa-phone"></i> Call Us</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:joehood2014@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tel:07841519614"><i class="fas fa-phone"></i> Call Us</a>
           <li class="nav-item"><a class="nav-link" href="#quotation">Free Quotation</a></li>
+          </li>
         </ul>
       </div>
     </div>
@@ -56,29 +57,39 @@
   <!-- Scrolling Banner -->
   <div class="marquee-banner text-white bg-dark py-2 overflow-hidden position-relative">
     <div class="marquee-text text-center fw-semibold d-flex align-items-center" style="gap: 2rem; white-space: nowrap;">
-      <span><i class="fas fa-bolt"></i> Same-Day Repairs</span>
-      <span><i class="fas fa-calendar-check"></i> Annual Maintenance</span>
+      <span><i class="fas fa-calendar-check"></i> Refurbishments</span>
+      <span><i class="fas fa-broom"></i> Cleaning</span>
+      <span><i class="fas fa-tools"></i> General Maintenance</span>
       <span><i class="fas fa-wrench"></i> Plumbing</span>
       <span><i class="fas fa-bolt"></i> Electrical</span>
-      <span><i class="fas fa-paint-roller"></i> Painting & Decorating</span>
-      <span><i class="fas fa-tree"></i> Fencing</span>
-      <span><i class="fas fa-home"></i> Roofing</span>
-      <span><i class="fas fa-tools"></i> Appliance Repairs</span>
-      <span><i class="fas fa-soap"></i> Carpet & Deep Cleaning</span>
-      <span><i class="fas fa-broom"></i> End-of-Tenancy Cleaning</span>
-      <span><i class="fas fa-leaf"></i> Garden Services</span>
+      <span><i class="fas fa-tree"></i> Gardening</span>
       <span><i class="fas fa-phone"></i> Free Estimates</span>
       <span><i class="fas fa-shield-alt"></i> Fully Insured & Certified</span>
       <span><i class="fas fa-map-marker-alt"></i> Local Experts in Cambridge</span>
       <span><i class="fas fa-phone-square-alt"></i> Call Now: 07841 519614</span>
+
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <section class="hero hero-garden" data-aos="zoom-in">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Garden Services in Cambridge</h1>
-      <p class="lead">Transform your garden with expert care and maintenance.</p>
+  <!-- Facebook Hero -->
+  <section class="hero hero-index position-relative">
+
+    <div class="facebook-video-center tilt-img">
+      <iframe
+        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046320603726160%2F&show_text=false&autoplay=true&mute=1&controls=0&width=500&height=888"
+        frameborder="0" allowfullscreen
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+    </div>
+    <!-- Overlay Content -->
+    <div
+      class="container text-white text-center d-flex flex-column justify-content-center align-items-center hero-overlay">
+      <h1 class="display-5 fw-bold" data-aos="fade-down" data-aos-delay="500">
+        Home Repairs & Maintenance Made Easy
+      </h1>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3" data-aos="zoom-in" data-aos-delay="700">
+        Get Your Free Quote
+      </a>
     </div>
   </section>
 
@@ -86,41 +97,46 @@
   <section class="py-5">
     <div class="tilt-img container" data-aos="fade-up">
       <div class="about-bubble text-center p-5 bg-white rounded shadow-sm hover-zoom">
-        <h2>About Our Garden Care</h2>
+        <h2>About Our General Maintenance Services</h2>
         <p class="lead">
-          At <strong>Prop-Up Services</strong>, we believe a well-kept garden transforms a home.
+          At <strong>Prop-Up Services</strong>, we provide reliable, affordable, and professional general maintenance
+          solutions to keep your home or property in top condition.
         </p>
         <p>
-          Whether you need regular upkeep or a seasonal refresh, our team delivers reliable garden services that keep
-          your green space looking its best.
+          From small repairs to larger jobs such as roofing, fencing, and annual upkeep, our experienced team ensures
+          everything is taken care of with efficiency and care.
         </p>
         <p>
-          From tidy lawns to full redesigns, we serve properties across Cambridge with care and attention to detail.
+          Fully insured and trusted locally across Cambridge, we offer both scheduled maintenance plans and one-off
+          repairs.
         </p>
         <p>
-          <em>Love your garden again.</em>
+          <em>Keeping your property safe, secure, and looking its best — all year round.</em>
         </p>
       </div>
     </div>
   </section>
 
   <!-- Service Description -->
-  <section class="py-5 bg-gradient text-white" style="background: linear-gradient(135deg, #28a745 20%, #6f42c1 100%);">
+  <section class="py-5 bg-gradient text-white" style="background: linear-gradient(135deg, #0d6efd 20%, #6610f2 100%);">
     <div class="container" data-aos="fade-up">
       <div class="bg-white text-dark rounded-4 p-5 shadow-lg tilt-img hover-zoom">
-        <h2 class="text-center fw-bold mb-4">🌱 Expert Garden Maintenance</h2>
+        <h2 class="text-center fw-bold mb-4">🛠️ Complete Property Maintenance</h2>
         <p class="lead text-center">
-          Enjoy a beautiful outdoor space without the hassle — our experienced gardeners handle everything, so you can
-          relax.
+          Our <strong>General Maintenance</strong> service covers a wide range of essential home and property upkeep —
+          helping you avoid costly repairs and giving you peace of mind.
         </p>
         <div class="row justify-content-center mt-4">
           <div class="col-md-8">
             <ul class="list-unstyled fs-5">
-              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Lawn care and mowing</li>
-              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Hedge trimming & pruning</li>
-              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Garden design & planting</li>
-              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Tree removal & stump grinding</li>
-              <li><i class="fas fa-check-circle text-success me-2"></i> Seasonal garden tidy-ups</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Roofing inspections & small repairs
+              </li>
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Fencing repairs & installations
+              </li>
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Annual property maintenance plans
+              </li>
+              <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> General household repairs</li>
+              <li><i class="fas fa-check-circle text-primary me-2"></i> Preventative upkeep to avoid costly issues</li>
             </ul>
           </div>
         </div>
@@ -128,48 +144,23 @@
     </div>
   </section>
 
+
+  <!-- Gallery Section -->
   <section class="py-5 bg-light">
     <div class="container" data-aos="fade-up">
       <h2 class="text-center mb-4">Explore Our Services</h2>
       <div class="row g-4">
 
-        <div class="col-6 col-md-3">
-          <a href="annual-maintenance.html" class="text-decoration-none text-dark">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <a href="refurbishments.html" class="text-decoration-none text-dark">
             <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in">
               <i class="fas fa-calendar-check fa-2x mb-3"></i>
-              <h6>Annual Maintenance</h6>
+              <h6>Refurbishments</h6>
             </div>
           </a>
         </div>
 
-        <div class="col-6 col-md-3">
-          <a href="annual-repairs.html" class="text-decoration-none text-dark">
-            <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="100">
-              <i class="fas fa-tools fa-2x mb-3"></i>
-              <h6>Annual Repairs</h6>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <a href="fencing.html" class="text-decoration-none text-dark">
-            <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="200">
-              <i class="fas fa-border-style fa-2x mb-3"></i>
-              <h6>Fencing</h6>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <a href="roofing.html" class="text-decoration-none text-dark">
-            <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="300">
-              <i class="fas fa-home fa-2x mb-3"></i>
-              <h6>Roofing</h6>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="500">
           <a href="cleaning.html" class="text-decoration-none text-dark">
             <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="400">
               <i class="fas fa-broom fa-2x mb-3"></i>
@@ -178,25 +169,16 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3">
-          <a href="painting.html" class="text-decoration-none text-dark">
-            <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="500">
-              <i class="fas fa-paint-roller fa-2x mb-3"></i>
-              <h6>Painting</h6>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <a href="general-repairs.html" class="text-decoration-none text-dark">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="700">
+          <a href="general-maintenance.html" class="text-decoration-none text-dark">
             <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="600">
               <i class="fas fa-tools fa-2x mb-3"></i>
-              <h6>General Repairs</h6>
+              <h6>General Maintenance</h6>
             </div>
           </a>
         </div>
 
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="800">
           <a href="plumbing.html" class="text-decoration-none text-dark">
             <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="700">
               <i class="fas fa-wrench fa-2x mb-3"></i>
@@ -205,7 +187,7 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="900">
           <a href="electrical.html" class="text-decoration-none text-dark">
             <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="800">
               <i class="fas fa-bolt fa-2x mb-3"></i>
@@ -214,11 +196,11 @@
           </a>
         </div>
 
-        <div class="col-6 col-md-3">
-          <a href="garden-services.html" class="text-decoration-none text-dark">
+        <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="1000">
+          <a href="gardening.html" class="text-decoration-none text-dark">
             <div class="bg-white p-4 rounded shadow-sm text-center hover-zoom" data-aos="zoom-in" data-aos-delay="900">
               <i class="fas fa-tree fa-2x mb-3"></i>
-              <h6>Garden Services</h6>
+              <h6>Gardening</h6>
             </div>
           </a>
         </div>
@@ -227,62 +209,33 @@
     </div>
   </section>
 
-
-  <!-- Gallery Section -->
+  <!-- Project Gallery -->
   <section class="py-5 bg-light">
-    <div class="container" data-aos="zoom-in">
-      <h3 class="mb-4 text-center">Garden Projects We've Completed</h3>
-      <div class="row g-3" data-aos="fade-up">
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm h-100">
-            <img src="assets/gardenservices1.jpg" class="card-img-top gallery-img" alt="Lawn mowing">
-            <div class="card-body">
-              <p class="card-text">Freshly mowed and edged lawn in Newnham — ready for summer!</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm h-100">
-            <img src="assets/gardenservices2.jpg" class="card-img-top gallery-img" alt="Garden tidy-up">
-            <div class="card-body">
-              <p class="card-text">Overgrown garden restored to order with hedge trimming and weeding.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="card shadow-sm h-100">
-            <img src="assets/gardenservices3.jpg" class="card-img-top gallery-img" alt="Planting and design">
-            <div class="card-body">
-              <p class="card-text">Custom planting and layout installed for a low-maintenance city garden.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Reviews Section -->
-  <section class="py-5">
     <div class="container" data-aos="fade-up">
-      <h3 class="mb-4 text-center">What Our Garden Clients Say</h3>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="tilt-img hover-zoom p-4 bg-white shadow-sm rounded">
-            <p class="mb-2">“My garden was a jungle — now it’s pristine. Great service from Prop-Up!”</p>
-            <p class="fw-bold mb-0">– Mark A., Cambridge</p>
+      <h3 class="mb-4 text-center">Recent Maintenance Projects</h3>
+      <div class="row g-3" data-aos="zoom-in">
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <img src="assets/roofing1.jpg" class="card-img-top roofing-img" alt="Roof tile replacement">
+            <div class="card-body">
+              <p class="card-text">Roof tile replacement and leak sealing for a Cambridge home.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="tilt-img hover-zoom p-4 bg-white shadow-sm rounded">
-            <p class="mb-2">“Joe and his team designed a garden that works beautifully for my family and dog.”</p>
-            <p class="fw-bold mb-0">– Lisa R., Histon</p>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <img src="assets/fencing1.jpg" class="card-img-top roofing-img" alt="Fencing installation">
+            <div class="card-body">
+              <p class="card-text">New fencing installation to improve garden security and privacy.</p>
+            </div>
           </div>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="tilt-img hover-zoom p-4 bg-white shadow-sm rounded">
-            <p class="mb-2">“Reliable, fast, and respectful. They've handled my seasonal tidy-ups for two years now.”
-            </p>
-            <p class="fw-bold mb-0">– Daniel T., Cherry Hinton</p>
+        <div class="col-sm-6 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <img src="assets/maintenance1.jpg" class="card-img-top roofing-img" alt="General upkeep">
+            <div class="card-body">
+              <p class="card-text">Annual maintenance check — covering roof, fencing, and guttering.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -290,24 +243,34 @@
   </section>
 
   <!-- FAQs -->
-  <section class="bg-light py-5" data-aos="fade-up">
-    <div class="container">
+  <section class="bg-light py-5">
+    <div class="container" data-aos="fade-up">
       <h3>Frequently Asked Questions</h3>
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse"
-              data-bs-target="#faq1">Do you offer one-off garden services?</button></h2>
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Do you handle roofing and fencing?
+            </button>
+          </h2>
           <div id="faq1" class="accordion-collapse collapse show">
-            <div class="accordion-body">Yes, we offer both one-off services and regular garden maintenance packages to
-              suit your needs.</div>
+            <div class="accordion-body">
+              Yes, roofing and fencing repairs are part of our General Maintenance service — including small roof
+              repairs, inspections, and fence installations.
+            </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse"
-              data-bs-target="#faq2">Can you help with garden design?</button></h2>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Can I book annual property maintenance?
+            </button>
+          </h2>
           <div id="faq2" class="accordion-collapse collapse">
-            <div class="accordion-body">Absolutely! Our team can assist with designing and planting a garden that suits
-              your style and space.</div>
+            <div class="accordion-body">
+              Absolutely. We offer flexible annual maintenance plans that cover roofs, fencing, gutters, and general
+              property upkeep — helping you save money long-term.
+            </div>
           </div>
         </div>
       </div>
@@ -396,7 +359,7 @@
     </div>
   </footer>
 
-   <!-- Bootstrap JS -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- AOS JS -->
