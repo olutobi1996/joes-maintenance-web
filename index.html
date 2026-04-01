@@ -524,39 +524,44 @@
                     </p>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="footer-form scroll-fade" data-aos="fade-up" data-aos-delay="300">
-                    <h4>Request a Service</h4>
-                    <div class="form-card">
-                        <form action="https://formspree.io/f/xldbpbvl" method="POST" enctype="multipart/form-data"
-                            class="contact-form">
+             <!-- Contact Form -->
+<div class="footer-form scroll-fade" data-aos="fade-up" data-aos-delay="300">
+    <h4>Request a Service</h4>
+    <div class="form-card">
+        <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" class="contact-form">
 
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="tel" name="phone" placeholder="Phone Number">
-                            <input type="email" name="email" placeholder="Email Address" required>
-                            <input type="hidden" name="_redirect" value="https://prop-up-services.com/thank-you.html">
-                            <input type="text" name="service" placeholder="Service Required">
+            <!-- REQUIRED hidden input -->
+            <input type="hidden" name="form-name" value="contact">
 
-                            <textarea name="details" placeholder="Briefly describe the issue or request"
-                                rows="3"></textarea>
-                            <input type="file" name="attachment" multiple>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="service" placeholder="Service Required">
 
-                            <button type="submit" class="cta-button">Send Request</button>
-                        </form>
-                    </div>
-                </div>
+            <textarea name="details" placeholder="Briefly describe the issue or request" rows="3"></textarea>
+            <input type="file" name="attachment" multiple>
 
-                <!-- Newsletter Subscribe -->
-                <div class="footer-subscribe scroll-fade" data-aos="fade-left" data-aos-delay="400">
-                    <h4>Stay Connected</h4>
-                    <p>Sign up to get updates, offers, and helpful tips from Prop-Up Services.</p>
-                    <form action="https://formspree.io/f/xvoegzdk" method="POST" class="subscribe-form">
-                        <div class="subscribe-box">
-                            <input type="email" name="email" placeholder="Enter your email" required>
-                            <button type="submit" class="cta-button">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
+            <button type="submit" class="cta-button">Send Request</button>
+        </form>
+    </div>
+</div>
+
+<!-- Newsletter Subscribe -->
+<div class="footer-subscribe scroll-fade" data-aos="fade-left" data-aos-delay="400">
+    <h4>Stay Connected</h4>
+    <p>Sign up to get updates, offers, and helpful tips from Prop-Up Services.</p>
+
+    <form name="newsletter" method="POST" data-netlify="true" class="subscribe-form">
+        
+        <!-- REQUIRED hidden input -->
+        <input type="hidden" name="form-name" value="newsletter">
+
+        <div class="subscribe-box">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Subscribe</button>
+        </div>
+    </form>
+</div>
             </div>
         </div>
 
