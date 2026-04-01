@@ -524,14 +524,18 @@
                     </p>
                 </div>
 
-             <!-- Contact Form -->
+        <!-- Contact Form -->
 <div class="footer-form scroll-fade" data-aos="fade-up" data-aos-delay="300">
     <h4>Request a Service</h4>
     <div class="form-card">
         <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" class="contact-form">
 
-            <!-- REQUIRED hidden input -->
+            <!-- Required hidden inputs -->
             <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="redirect" value="/thankyou.html">
+
+            <!-- Spam protection -->
+            <input type="hidden" name="bot-field">
 
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="tel" name="phone" placeholder="Phone Number">
@@ -553,8 +557,9 @@
 
     <form name="newsletter" method="POST" data-netlify="true" class="subscribe-form">
         
-        <!-- REQUIRED hidden input -->
+        <!-- Required hidden inputs -->
         <input type="hidden" name="form-name" value="newsletter">
+        <input type="hidden" name="redirect" value="/thankyou.html">
 
         <div class="subscribe-box">
             <input type="email" name="email" placeholder="Enter your email" required>
