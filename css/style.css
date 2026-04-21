@@ -177,14 +177,14 @@ html {
   border-width: 5px; }
 
 .primary-black--hover {
-  background: #fb7400;
+  background: #115ca7;
   color: #fff; }
   .primary-black--hover:hover {
     background: #000;
     color: #fff; }
 
 .primary-dark--hover {
-  background: #fb7400;
+  background: #115ca7;
   color: #fff; }
   .primary-dark--hover:hover {
     background: gray;
@@ -468,9 +468,9 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: #fb7400; }
+          color: #115ca7; }
       .site-navbar .site-navigation .site-menu > li.active > a {
-        color: #fb7400 !important; }
+        color: #115ca7 !important; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -492,7 +492,7 @@ h1, h2, h3, h4, h5,
         top: 100%;
         position: absolute;
         text-align: left;
-        border-top: 2px solid #fb7400;
+        border-top: 2px solid #115ca7;
         -webkit-box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
         box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
         padding: 0px 0;
