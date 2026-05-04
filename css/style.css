@@ -1879,3 +1879,6 @@ form .btn {
     color: #555;
     margin: 0;
   }
+.project-item-overlay {
+  pointer-events: none;
+}
