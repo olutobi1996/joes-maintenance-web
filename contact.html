@@ -24,12 +24,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
+    <div class="site-wrap" id="home-section">
 
-<div class="site-wrap" id="home-section">
-
-  <!-- MOBILE MENU -->
+  <!-- MOBILE MENU (THIS WAS MISSING) -->
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
       <div class="site-mobile-menu-close mt-3">
@@ -39,56 +38,64 @@
     <div class="site-mobile-menu-body"></div>
   </div>
 
-  <!-- NAVBAR -->
-  <header class="site-navbar site-navbar-target" role="banner">
-    <div class="container">
-      <div class="row align-items-center position-relative">
+<header class="site-navbar site-navbar-target custom-navbar" role="banner">
 
-        <!-- LOGO -->
-        <div class="col-3">
-          <div class="site-logo">
-            <a href="index.html">
-              <img src="assets/propuplogo.jpg" alt="Prop-Up Services Logo" class="logo">
-            </a>
-          </div>
+  <div class="container">
+    <div class="row align-items-center position-relative">
+
+      <!-- LEFT: LOGO -->
+      <div class="col-3">
+        <div class="site-logo">
+          <a href="index.html">
+            <img src="assets/propuplogo.jpg" alt="PropUp Logo" class="logo">
+          </a>
         </div>
+      </div>
 
-        <!-- NAV -->
-        <div class="col-9 text-right">
+      <!-- RIGHT: NAV -->
+      <div class="col-9 text-right">
 
-          <span class="d-inline-block d-lg-none">
-            <a href="#" class="text-white site-menu-toggle js-menu-toggle py-5">
-              <span class="icon-menu h3 text-white"></span>
-            </a>
-          </span>
+        <!-- Mobile toggle -->
+        <span class="d-inline-block d-lg-none">
+          <a href="#" class="text-white site-menu-toggle js-menu-toggle py-5">
+            <span class="icon-menu h3 text-white"></span>
+          </a>
+        </span>
 
-          <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-            <ul class="site-menu main-menu js-clone-nav ml-auto">
+        <!-- Desktop Menu -->
+        <nav class="site-navigation text-center ml-auto d-none d-lg-block" role="navigation">
+          <ul class="site-menu main-menu js-clone-nav ml-auto">
 
-              <li><a href="index.html" class="nav-link">Home</a></li>
-
-              <li class="has-children">
-                <a href="services.html" class="nav-link">Services</a>
-                <ul class="dropdown">
-                  <li><a href="about.html">About Us</a></li>
+            <li class="has-children">
+              <a href="#" class="nav-link">Services</a>
+              <ul class="dropdown">
+                 <li><a href="about.html">About Us</a></li>
                   <li><a href="contact.html">Contact</a></li>
-                  <li><a href="refurbishments.html">Refurbishments</a></li>
-                  <li><a href="cleaning.html">Cleaning</a></li>
-                  <li><a href="general-maintenance.html">General Maintenance</a></li>
-                  <li><a href="electrical.html">Electrical & Plubming</a></li>
-                  <li><a href="gardening.html">Gardening</a></li>
-                </ul>
-              </li>
+                <li><a href="refurbishments.html">Refurbishments</a></li>
+                <li><a href="cleaning.html">Cleaning</a></li>
+                <li><a href="general-maintenance.html">General Maintenance</a></li>
+                <li><a href="electrical.html">Electrical & Plubming</a></li>
+                <li><a href="gardening.html">Gardening</a></li>
+              </ul>
+            </li>
 
-              <li class="active"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li>
+              <a href="contact.html" class="nav-link">Email Us</a>
+            </li>
 
-            </ul>
-          </nav>
-        </div>
+            <li>
+              <a href="contact.html" class="nav-link btn btn-primary text-white px-3">Free Quote</a>
+            </li>
+
+          </ul>
+        </nav>
 
       </div>
+
     </div>
-  </header>
+  </div>
+
+</header>
 
   <!-- HERO -->
   <div class="ftco-blocks-cover-1">
