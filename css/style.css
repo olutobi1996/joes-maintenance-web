@@ -1882,3 +1882,13 @@ form .btn {
 .project-item-overlay {
   pointer-events: none;
 }
+.square-image {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.square-image img {
+  object-fit: cover;
+  object-position: center;
+}
